@@ -1,0 +1,60 @@
+{
+    "skills": [
+        {
+            "icon": "fab fa-js-square fa-2x",
+            "skill": "JavaScript",
+            "description": "Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.",
+            "yrCreated": "1995",
+            "growth": "20",
+            "jump": "75%"
+        },
+        {
+            "icon": "fab fa-java fa-2x",
+            "skill": "Java",
+            "description": "Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
+            "yrCreated": "1995",
+            "growth": "-10",
+            "jump": "-10%"
+        },
+        {
+            "icon": "fab fa-react fa-2x",
+            "skill": "React",
+            "description": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.",
+            "yrCreated": "2013",
+            "growth": "55",
+            "jump": "72%"
+        },
+        {
+            "icon": "fab fa-css3 fa-2x",
+            "skill": "CSS",
+            "description": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.",
+            "yrCreated": "1996",
+            "growth": "40",
+            "jump": "89%"
+        },
+        {
+            "icon": "fab fa-sass fa-2x",
+            "skill": "Sass",
+            "description": "Sass is a style sheet language initially designed by Henry Thornton and developed by Natalie Weizenbaum.",
+            "yrCreated": "2006",
+            "growth": "30",
+            "jump": "69%"
+        },
+        {
+            "icon": "fab fa-angular fa-2x",
+            "skill": "AngularJS",
+            "description": "AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.",
+            "yrCreated": "2010",
+            "growth": "60",
+            "jump": "89%"
+        },
+        {
+            "icon": "fab fa-html5 fa-2x",
+            "skill": "HTML",
+            "description": "Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.",
+            "yrCreated": "1989",
+            "growth": "50",
+            "jump": "100%"
+        }
+    ]
+}

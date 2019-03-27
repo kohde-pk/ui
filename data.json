@@ -1,0 +1,85 @@
+{
+    "data": [
+        {
+            "employeeName": "Kathleen Ohde",
+            "hireDate": "05-23-17",
+            "employeeID": "7813",
+            "employeeTitle": "Software Engineer I",
+            "location": "Omaha",
+            "workPhone": "403.555.4778",
+            "cellPhone": "402.880.7600",
+            "lastReviewDate": "05-25-18",
+            "nextReviewDate": "05-25-19",
+            "Division": "Cards",
+            "CardName": "Employee"
+        },
+        {
+            "employeeName": "Chase Ohde",
+            "hireDate": "01-01-19",
+            "employeeID": "7813",
+            "employeeTitle": "DevOps Engineer I",
+            "location": "Omaha",
+            "workPhone": "403.555.4778",
+            "cellPhone": "402.880.7476",
+            "lastReviewDate": "",
+            "nextReviewDate": "06-01-19",
+            "Division": "Cards",
+            "CardName": "Employee"
+        },
+        {
+            "skill": "JavaScript",
+            "skillLevel": "Intermediate",
+            "employeeID": "7813",
+            "Division": "Skills",
+            "CardName": "Skill"
+        },
+        {
+            "skill": "AngularJS",
+            "skillLevel": "Intermediate",
+            "employeeID": "7813",
+            "Division": "Skills",
+            "CardName": "Skill"
+        },
+        {
+            "title": "UI Developer",
+            "salary": "$50,000",
+            "company": "ProKarma",
+            "Division": "Jobs",
+            "CardName": "Job"
+        },
+        {
+            "title": "Software Engineer I",
+            "salary": "$60,000",
+            "company": "ProKarma",
+            "Division": "Jobs",
+            "CardName": "Job"
+        },
+        {
+            "title": "Scrum Master",
+            "salary": "$90,000",
+            "company": "ProKarma",
+            "Division": "Jobs",
+            "CardName": "Job"
+        },
+        {
+            "name": "Kathleen Ohde",
+            "company": "ProKarma",
+            "title": "Sotfware Engineer",
+            "businessPhone": "402-345-4434",
+            "email": "kohde@prokarma.com",
+            "website": "www.prokarma.com",
+            "logo": "img/prokarma.png",
+            "Division": "businessCards",
+            "CardName": "businessCard"
+        },
+        {
+            "CardName": "whyPK",
+            "Division": "aboutUs",
+            "why1": "ProKarma builds better, bolder products and services by applying the right mix of people, process and technology.",
+            "why2": "We are experts in planning, engineering and optimizing digital products and platforms that help companies disrupt and dominate their industries.",
+            "why3": "Our teams have been tapped by some of the world's most admired companies to build solutions no one else can."
+        }
+
+
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "articles": [
+        {
+            "title": "Why Bacon Ipsum",
+            "date": "05-23-18",
+            "author": "Kathe Ohde",
+            "content": "Kielbasa ea do venison cupim nostrud capicola, jerky hamburger chuck. Commodo ground round ham pork. Turkey sirloin prosciutto, ut tri-tip drumstick buffalo pork loin rump. Tempor dolore laboris qui. Filet mignon consequat rump ex."
+        },
+        {
+            "title": "Using SASS",
+            "date": "01-23-19",
+            "author": "John Doe",
+            "content": "Bacon ipsum voluptate meatball chuck tail. Meatloaf short ribs est, culpa tri-tip consequat picanha, deserunt fatback enim pork shankle labore. Excepteur pork chop labore est, esse pork belly enim quis minim. Doner velit spare ribs, voluptate ut esse shoulder in meatball exercitation ribeye pork chicken. Meatloaf elit dolore dolor ham chicken proident. Kevin ham tri-tip, cow venison leberkas esse prosciutto in. Anim swine bacon jerky chicken ribs nulla. Jerky labore biltong cillum doner dolor eiusmod velit drumstick. Incididunt chuck elit."
+        },
+        {
+            "title": "Vanilla JavaScript",
+            "date": "01-04-19",
+            "author": "Ghost Writer",
+            "content": "Commodo tri-tip ut id in ex irure et veniam pancetta tenderloin shank cupidatat rump cillum. Meatloaf short ribs est, dolore ham hock labore quis aliquip ea hamburger enim pork ex sunt. Meatloaf elit dolore dolor ham chicken proident. Kevin ham tri-tip, cow venison leberkas esse prosciutto in. Anim swine bacon jerky chicken ribs nulla. Incididunt chuck elit, turducken ham ball tip fatback ground round andouille ad est ea quis. Pariatur tenderloin chicken ribs brisket excepteur frankfurter. Tail meatloaf cillum laborum bacon qui consequat veniam non. Burgdoggen brisket in tempor shoulder hamburger tail pariatur ex ham salami meatloaf occaecat."
+        },
+        {
+            "title": "Week in Review",
+            "date": "02-20-19",
+            "author": "Kathe Ohde",
+            "content": "Dolore ham hock labore quis aliquip ea hamburger enim pork ex sunt. Corned chicken culpa tri-tip consequat picanha, deserunt fatback enim pork shankle labore. Doner velit spare ribs, voluptate ut esse shoulder in meatball exercitation ribeye pork chicken. Meatloaf elit dolore dolor ham chicken proident. Kevin ham tri-tip, cow venison leberkas esse prosciutto in. Anim swine bacon jerky chicken ribs nulla. Jerky labore biltong cillum doner dolor eiusmod velit drumstick. Incididunt chuck elit, turducken ham ball tip fatback ground round andouille ad est ea quis. Pariatur tenderloin chicken ribs brisket excepteur frankfurter. Tail meatloaf cillum laborum bacon qui consequat veniam non. Burgdoggen brisket in tempor shoulder hamburger tail pariatur ex ham salami meatloaf occaecat."
+        }
+    ]
+}
