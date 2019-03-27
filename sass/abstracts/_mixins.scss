@@ -1,0 +1,227 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Fonts
+
+@mixin f-roboto {
+    font-family: 'Roboto', sans-serif;
+} 
+
+@mixin f-opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin f-nunito {
+    font-family: 'Nunito', sans-serif;
+}
+@mixin f-varela {
+    font-family: 'Varela Round', sans-serif;
+}
+@mixin f-shadows {
+    font-family: 'Shadows Into Light', cursive;
+}
+@mixin f-acme {
+    font-family: 'Acme', sans-serif;
+}
+@mixin f-lato {
+    font-family: 'Lato', sans-serif;
+}
+@mixin f-apple {
+    font-family: 'Homemade Apple', cursive;
+}
+@mixin f-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+@mixin f-sigmar {
+    font-family: 'Sigmar One', cursive;
+}
+
+
+
+
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin absCenterV {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-35%);
+}
+
+@mixin absCenterH {
+    top: 50%;
+    transform: translateY(50%);
+}
+
+// Card sizes
+
+@mixin standardCard {
+    width: 25rem;
+    height: 30rem;
+}
+
+@mixin rectCard {
+    width: 30rem;
+    height: 35rem;
+}
+
+@mixin longCard {
+    width: 10rem;
+    height: 30rem;
+}
+@mixin businessCard {
+    width: 27rem;
+    height: 15rem;
+}
+
+@mixin businessLinkedIn {
+    width: 27rem;
+    height: 4rem;
+}
+
+// Shadows
+
+@mixin insetShadow {
+    box-shadow: inset -6px -7px 19px darken(black, 0);
+}
+
+@mixin dropshadows {
+    filter: drop-shadow(0 0 1vh $pk-gray);
+}
+
+@mixin shadows {
+    box-shadow: 3px 3px 10px $pk-gray;
+}
+
+@mixin shadow15 {
+    box-shadow: 0ch 0 12px 15px 0 rgba($color-black, 0.25);
+}
+@mixin shadow3 {
+    box-shadow : 3px 3px 3px rgba($color-black, 0.25);
+}
+
+@mixin shadow6 {
+    box-shadow : 6px 6px 6px rgba($color-black, 0.25);
+}
+
+@mixin shadow-white {
+    box-shadow: 3px 3px 10px $color-white;
+}
+
+@mixin shadows2 {
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 
+    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+@mixin textshadow {
+    text-shadow: 
+    1px 1px rgba($color-text-shadow, 0.8), 
+    2px 2px rgba($color-text-shadow, 0.802), 
+    3px 3px rgba($colors-text-shadow, 0.804), 
+    4px 4px rgba($color-text-shadow, 0.806), 
+    5px 5px rgba($color-text-shadow, 0.808), 
+    6px 6px rgba($color-text-shadow, 0.81), 
+    7px 7px rgba($color-text-shadow, 0.812), 
+    8px 8px rgba($color-text-shadow, 0.814), 
+    9px 9px rgba($color-text-shadow, 0.816), 
+    10px 10px rgba($color-text-shad ow, 0.818), 
+    11px 11px rgba($color-text-shadow, 0.82), 
+    12px 12px rgba($color-text-shadow, 0.822), 
+    13px 13px rgba($color-text-shadow, 0.824), 
+    14px 14px rgba($color-text-shadow, 0.826), 
+    15px 15px rgba($color-text-shadow, 0.828), 
+    16px 16px rgba($color-text-shadow, 0.83), 
+    17px 17px rgba($color-text-shadow, 0.832), 
+    18px 18px rgba($color-text-shadow, 0.834), 
+    19px 19px rgba($color-text-shadow, 0.836), 
+    20px 20px rgba($color-text-shadow, 0.838), 
+    21px 21px rgba($color-text-shadow, 0.84), 
+    22px 22px rgba($color-text-shadow, 0.842), 
+    23px 23px rgba($color-text-shadow, 0.844), 
+    24px 24px rgba($color-text-shadow, 0.846), 
+    25px 25px rgba($color-text-shadow, 0.848), 
+    26px 26px rgba($color-text-shadow, 0.85), 
+    27px 27px rgba($color-text-shadow, 0.852), 
+    28px 28px rgba($color-text-shadow, 0.854), 
+    29px 29px rgba($color-text-shadow, 0.856), 
+    30px 30px rgba($color-text-shadow, 0.858), 
+    31px 31px rgba($color-text-shadow, 0.86), 
+    32px 32px rgba($color-text-shadow, 0.862), 
+    33px 33px rgba($color-text-shadow, 0.864), 
+    34px 34px rgba($color-text-shadow, 0.866), 
+    35px 35px rgba($color-text-shadow, 0.868), 
+    36px 36px rgba($color-text-shadow, 0.87), 
+    37px 37px rgba($color-text-shadow, 0.872), 
+    38px 38px rgba($color-text-shadow, 0.874), 
+    39px 39px rgba($color-text-shadow, 0.876), 
+    40px 40px rgba($color-text-shadow, 0.878), 
+    41px 41px rgba($color-text-shadow, 0.88), 
+    42px 42px rgba($color-text-shadow, 0.882), 
+    43px 43px rgba($color-text-shadow, 0.884), 
+    44px 44px rgba($color-text-shadow, 0.886), 
+    45px 45px rgba($color-text-shadow, 0.888), 
+    46px 46px rgba($color-text-shadow, 0.89), 
+    47px 47px rgba($color-text-shadow, 0.892), 
+    48px 48px rgba($color-text-shadow, 0.894), 
+    49px 49px rgba($color-text-shadow, 0.896), 
+    50px 50px rgba($color-text-shadow, 0.898), 
+    51px 51px rgba($color-text-shadow, 0.9), 
+    52px 52px rgba($color-text-shadow, 0.902), 
+    53px 53px rgba($color-text-shadow, 0.904), 
+    54px 54px rgba($color-text-shadow, 0.906), 
+    55px 55px rgba($color-text-shadow, 0.908), 
+    56px 56px rgba($color-text-shadow, 0.91), 
+    57px 57px rgba($color-text-shadow, 0.912), 
+    58px 58px rgba($color-text-shadow, 0.914), 
+    59px 59px rgba($color-text-shadow, 0.916), 
+    60px 60px rgba($color-text-shadow, 0.918), 
+    61px 61px rgba($color-text-shadow, 0.92), 
+    62px 62px rgba($color-text-shadow, 0.922), 
+    63px 63px rgba($color-text-shadow, 0.924), 
+    64px 64px rgba($color-text-shadow, 0.926), 
+    65px 65px rgba($color-text-shadow, 0.928), 
+    66px 66px rgba($color-text-shadow, 0.93), 
+    67px 67px rgba($color-text-shadow, 0.932), 
+    68px 68px rgba($color-text-shadow, 0.934), 
+    69px 69px rgba($color-text-shadow, 0.936), 
+    70px 70px rgba($color-text-shadow, 0.938), 
+    71px 71px rgba($color-text-shadow, 0.94), 
+    72px 72px rgba($color-text-shadow, 0.942), 
+    73px 73px rgba($color-text-shadow, 0.944), 
+    74px 74px rgba($color-text-shadow, 0.946), 
+    75px 75px rgba($color-text-shadow, 0.948), 
+    76px 76px rgba($color-text-shadow, 0.95), 
+    77px 77px rgba($color-text-shadow, 0.952), 
+    78px 78px rgba($color-text-shadow, 0.954), 
+    79px 79px rgba($color-text-shadow, 0.956), 
+    80px 80px rgba($color-text-shadow, 0.958), 
+    81px 81px rgba($color-text-shadow, 0.96), 
+    82px 82px rgba($color-text-shadow, 0.962), 
+    83px 83px rgba($color-text-shadow, 0.964), 
+    84px 84px rgba($color-text-shadow, 0.966), 
+    85px 85px rgba($color-text-shadow, 0.968), 
+    86px 86px rgba($color-text-shadow, 0.97), 
+    87px 87px rgba($color-text-shadow, 0.972), 
+    88px 88px rgba($color-text-shadow, 0.974), 
+    89px 89px rgba($color-text-shadow, 0.976), 
+    90px 90px rgba($color-text-shadow, 0.978), 
+    91px 91px rgba($color-text-shadow, 0.98), 
+    92px 92px rgba($color-text-shadow, 0.982), 
+    93px 93px rgba($color-text-shadow, 0.984), 
+    94px 94px rgba($color-text-shadow, 0.986), 
+    95px 95px rgba($color-text-shadow, 0.988), 
+    96px 96px rgba($color-text-shadow, 0.99), 
+    97px 97px rgba($color-text-shadow, 0.992), 
+    98px 98px rgba($color-text-shadow, 0.994), 
+    99px 99px rgba($color-text-shadow, 0.996), 
+    100px 100px rgba($color-text-shadow, 0.998)
+}

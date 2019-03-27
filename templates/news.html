@@ -1,0 +1,19 @@
+<section class="feature-masonry" ng-controller="newsController">
+    <div class="center-text margin-bottom-medium">s
+    </div>
+    <div class="masonry">
+        <div class="masonry__item" ng-repeat="article in articles.articles">
+            <div class="masonry__item--header">{{ article.title }}</div>
+            <div class="masonry__item--content">
+                {{ article.content }} 
+                <span class="more fas fa-ellipsis-h"></span>
+            </div>
+            <div class="masonry__item--footer">
+                    <p class="news--writer"><i class="far fa-user"></i> {{ article.author }}</p>
+                    <p class="news--date"><i class="far fa-calendar"></i> {{ article.date }}</p>
+                    <p class="news--like"><i class="far fa-heart"></i> </p>
+                </div>
+        </div>
+    </div>
+</section>
+

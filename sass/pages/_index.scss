@@ -1,0 +1,108 @@
+
+.content {
+    position: relative;
+    padding-top: 15rem;
+}
+
+.banner .icon-js {
+    position: absolute;
+    padding-top: 20rem;
+    left: 40%;
+    margin-left: -200px;
+    z-index: 20000;
+    opacity: .3;
+
+    .img-js {
+        animation: float-js 2s ease-in-out infinite;
+    }
+}
+
+.banner .icon-tv {
+    position: absolute;
+    padding-top: 22rem;
+    // left: 44%;
+    margin-left: 65%;
+    z-index: -1;
+    opacity: .3;
+
+    .img-tv {
+    animation: float-tv 2.3s ease-in-out infinite;
+    }
+}
+.banner .icon-css {
+    position: absolute;
+    padding-top: 21rem;
+    // left: 19%;
+    margin-left: 200px;
+    z-index: -1;
+    opacity: .3;
+    
+    .img-css {
+        animation: float-css 3.1s ease-in-out infinite;
+    }
+}
+
+.banner .icon-mouse {
+    position: absolute;
+    padding-top: 24rem;
+    left: 52%;
+    margin-left: -200px;
+    z-index: -1;
+    opacity: .3;
+    
+    .img-mouse {
+        animation: float-mouse 2.7s ease-in-out infinite;
+        
+    }
+}
+.banner .icon-git {
+    position: absolute;
+    padding-top: 24rem;
+    left: 36%;
+    margin-left: -200px;
+    z-index: -1;
+    opacity: .3;
+    
+    .img-git {
+        animation: float-git 2.9s ease-in-out infinite;
+
+    }
+
+}
+
+@keyframes float-js {
+	0% {transform: translateY(0px); opacity: 0.0;}
+    18% {opacity: 0.5;}
+    50% {opacity: 0.75;}
+	85% {opacity: 0.5;}	
+	100% {transform: translateY(-45px); opacity: 0.0;}									
+}
+@keyframes float-css {
+    0% {transform: translateY(60px); opacity: 0.0;}
+	22% {opacity: 0.5;}
+    54% {opacity: 0.75;}
+	85% {opacity: 0.5;}	
+	100% {transform: translateY(-55px); opacity: 0.0;}									
+}
+@keyframes float-mouse {
+    0% {transform: translateY(70px); opacity: 0.0;}
+	45% {opacity: 0.5;}
+    60% {opacity: 0.75;}
+	90% {opacity: 0.5;}	
+	100% {transform: translateY(-70px); opacity: 0.0;}									
+}
+@keyframes float-git {
+    0% {transform: translateY(0px); opacity: 0.0;}
+	20% {opacity: 0.5;}
+    60% {opacity: 0.45;}
+	90% {opacity: 0.25;}	
+	100% {transform: translateY(-90px); opacity: 0.0;}									
+}
+@keyframes float-tv {
+    0% {transform: translateY(75px); opacity: 0.0;}
+	20% {opacity: 0.5;}
+    45% {opacity: 0.45;}
+	80% {opacity: 0.25;}	
+	100% {transform: translateY(-80px); opacity: 0.0;}									
+}
+

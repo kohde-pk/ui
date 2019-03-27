@@ -1,0 +1,40 @@
+.page {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  
+    &-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    &-content {
+        flex: 1;
+    }
+  
+    &-nav {
+        /* 12em is the width of the columns */
+        flex: 0 0 12em;
+        order: -1
+    }
+    
+    &-nav {
+        /* put the nav on the left */
+        order: -1;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-body {
+      flex-direction: row;
+      flex: 1;
+    }
+    .page-content {
+      flex: 1;
+    }
+    .page-nav {
+      /* 12em is the width of the columns */
+      flex: 0 0 12em;
+    }
+  }

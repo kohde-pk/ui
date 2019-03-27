@@ -1,0 +1,254 @@
+body {
+    background-image: linear-gradient(to bottom right, $brite3, $brite2);
+    margin: 0;
+    padding: 0;
+    width: 100vw; 
+    height: 100vh;
+
+    &.color1 {
+        background-image: linear-gradient(to bottom right, $daark1, $daark18);
+    }
+    &.color2 {
+        background-image: linear-gradient(to bottom right, $color-black, lighten($color-black, 30));
+    }
+    &.color3 {
+        background-image: linear-gradient(to bottom right, $daark7, $daark3);
+    }
+    &.color4 {
+        background-image: linear-gradient(to bottom right, $daark6, $daark4);
+    }
+    &.color5 {
+        background-image: linear-gradient(to bottom right, $brite6, $brite3);
+    }
+    &.color6 {
+        background-image: linear-gradient(to bottom right, $color-white, $soft4);
+    }
+}
+
+section.section-facts {
+    width: 100vw;
+    height: 100vh;
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 25rem);
+        justify-content: space-evenly;
+        height: 100%;
+        // @include absCenterV;
+        margin-top: 5px;
+    }
+
+    & .fact {
+        width: 25rem;
+        height: 30rem;
+        transition: all 0.4s ease;
+        margin: 5px 5px;
+        font-family:'Roboto', Arial, sans-serif;
+        color: $color-white;
+        border-radius: 4px;
+    }
+
+    & .fact--category {
+        position: absolute;
+        font-size: 1.2rem;
+        left: 1rem;
+        top: 1rem;
+    }
+
+    & .fact--head{
+        position: absolute;
+        text-align: left;
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.1;
+        left: 1rem;
+        top: 2.5rem;
+        transition: all .5s ease;
+    }
+
+    & span.fact--source{
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .fact--answer {
+        will-change: auto;
+        position: absolute;
+        left: .5rem;
+        top: 20%;
+        margin-top: 3rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        left: 1rem;
+        display: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    i.fact--icon {
+        @include absCenter;
+
+
+    }
+
+    .fact:nth-of-type(1) {
+        background-color: rgba($brite4, .7);
+        border: 1px solid darken($brite4, 0);
+        filter: drop-shadow(0 0 1vh black);
+        box-shadow: inset -6px -7px 19px darken($brite4, 10);
+        box-shadow: inset 6px 7px 19px lighten($brite4, 10);
+    }
+    .fact:nth-of-type(2) {
+        background-color: rgba($brite3, .7);
+        border: 1px solid darken($brite3, 0);
+        filter: drop-shadow(0 0 1vh black);
+        box-shadow: inset -6px -7px 19px darken($brite3, 10);
+        box-shadow: inset 6px 7px 19px lighten($brite3, 10);
+    }
+    .fact:nth-child(3) {
+        background-color: rgba($brite2, .7);
+        border: 1px solid darken($brite2, 0);
+        filter: drop-shadow(0 0 1vh black);
+        box-shadow: inset -6px -7px 19px darken($brite2, 10);
+        box-shadow: inset 6px 7px 19px lighten($brite2, 10);
+    }
+
+    .fact:last-child {
+        background-color: rgba($brite1, .7);
+        border: 1px solid darken($brite1, 0);
+        filter: drop-shadow(0 0 1vh black);
+        box-shadow: inset -6px -7px 19px darken($brite1, 10);
+        box-shadow: inset 6px 7px 19px lighten($brite1, 10);
+    }
+}
+
+    .fact:hover {
+        .fact--head {
+            // animation: headOut .5s ease-in;
+            // display: none;
+            left: .25rem;
+            transform: scale(.85);
+            font-size: 2rem;
+            padding-top: 10px;
+            // color: darken($color-white, 20);
+            // text-shadow: 1px 1px 1px black;
+        }
+        .fact--answer {
+            display: block;
+            animation: answerIn .5s ease-out;
+        }
+        i.fact--icon {
+            display: none;
+        }
+    }
+
+    @keyframes answerIn {
+        0% { 
+          transform: translateX(-130px) scale(1); 
+          opacity: 0;
+        }
+        50% { 
+          transform: translateX(10px) scale(1); 
+          opacity: .3;
+        }
+        100% { 
+           transform: translateX(0px) scale(1); 
+           opacity: 1;
+        }
+    }
+
+    @keyframes headOut {
+        0% { 
+          opacity: 1;
+          transform: scale(.9);
+        }
+        50% { 
+            opacity: .7;
+            transform: scale(1.1);
+        }
+        100% {  
+            opacity: 0;
+            transform: scale(1);
+            display: none;
+        }
+    }
+    
+    section.section-facts-dark {
+        .card-container {
+            display: flex;
+            justify-content: space-evenly;
+            height: 100%;
+            // @include absCenterV;
+            margin-top: 5px;
+        }
+    
+        & .fact {
+            @include longCard;
+            transition: all 0.4s ease;
+            margin: 5px 5px;
+            font-family:'Roboto', Arial, sans-serif;
+            // color: $color-white;
+        }
+    
+        & .fact--category {
+            position: absolute;
+            font-size: 1.2rem;
+            left: 1rem;
+            top: 1rem;
+        }
+    
+        & .fact--head{
+            position: absolute;
+            text-align: left;
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.1;
+            left: 1rem;
+            top: 2.5rem;
+            transition: all .5s ease;
+        }
+    
+        & span.fact--source{
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    
+        .fact--answer {
+            will-change: auto;
+            position: absolute;
+            left: .5rem;
+            top: 20%;
+            margin-top: 3rem;
+            font-size: 2rem;
+            line-height: 2rem;
+            left: 1rem;
+            display: none;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    
+        .fact:nth-child(even) {
+            background-color: $color-black;
+            color: $color-white;
+            border: 1px solid $color-black;
+        }
+        .fact:nth-child(odd) {
+            background-color: s$color-white;
+            color: $color-black;
+            border: 1px solid $color-black;
+
+        }
+    }
+    

@@ -1,0 +1,36 @@
+section.section-jobs {
+
+    .pk-card {
+        width: 250px;
+        margin: 20px 0;
+    }
+
+    .job-card--text {
+        color: $color-white;
+        text-align: center;
+        @include shadow-white;
+        border-bottom: 8px solid black;
+    }
+
+    .job-card--description {
+        color: $color-white;
+        font-size: 1.2rem;
+        margin: 5rem 3rem;
+    }
+
+    li {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}   
+    .pk-card__side .btn.btn-white,
+    .pk-card__side .btn.btn-white:link,
+    .pk-card__side .btn.btn-white:visited {
+        margin-top: 10rem;
+        @include shadows;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+}

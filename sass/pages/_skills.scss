@@ -1,0 +1,73 @@
+section.section-skills {
+    margin-top: 4rem;
+}
+
+section .feature-skills {
+    position: relative;
+    width: 200px;
+    height: 220px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: $coolor3;
+    border: .5px solid $kip5;
+    border-radius: 3px;
+    @include shadows;
+
+    div.skills-header {
+        border-bottom: 1px solid $kip5;
+    }
+
+    .skills--title {
+        font-size: 20px;
+        font-weight: 500;
+        color: $kip3;
+        display: inline;
+        margin-left: 8px;
+    }
+
+    .skills--desc {
+        font-size: 10px;
+        letter-spacing: .2px;
+        height: 155px;
+        color: $kip2;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+
+    div.skills--footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 3rem;
+        border-top: .5px solid $kip2;
+
+        p.skills-year {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+
+        }
+    }
+
+    & .skills--footer>p {
+        color: $kip4;
+        align-content: flex-end;
+        bottom: 10px;
+        
+        &>i {
+            font-weight: 600;
+            font-size: 1px;
+            color: $kip4;
+        }
+
+    }
+
+    }
+
+    // .skills-block {
+    //     display: inline-block;
+        
+    //     &:not(:last-child) {
+    //         margin-right: 10px;
+    //     }
+    // }

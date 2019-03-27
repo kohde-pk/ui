@@ -1,0 +1,63 @@
+section .feature-masonry {
+  margin-top: 0;
+}
+
+.masonry {
+    column-count: 3;
+    column-gap: 1;
+    border: 2px solid $soft2;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 20px;
+    background-color: $deeep3;
+    @include shadows2;
+  }
+  .masonry__item {
+    break-inside: avoid;
+    margin: 0 4px 4px 0;
+    border: .5px solid rgba($kyle2, .7);
+    border-radius: 2px;
+    background-color: $soft2;
+    @include shadows;
+  }
+  .masonry__item--header {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: black;
+    border-bottom: 6px solid $soft2;
+    background-color: rgba($kyle2, .6);
+    text-shadow: 1px 2px 4px $soft2;
+  }
+  .masonry__item--content {
+    padding: 10px;
+    border-radius: 6px;
+    color: black;
+  }
+  .masonry__item--footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
+    border-top: 6px solid  $soft2;
+    background-color: $kyle5;
+    color: white;
+  }
+  .news--like {
+      transition: all .3s ease-out;
+  }
+
+  .news--like:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.4);
+    color: $pk-red;
+  }
+
+  span.more {
+    display: block;
+
+    font-size: 2rem;
+    text-align: right;
+    cursor: pointer;
+    color: $soft2;
+  }

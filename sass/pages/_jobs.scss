@@ -1,0 +1,395 @@
+section.section-jobs {
+
+    .pk-card {
+        width: 250px;
+        margin: 20px 0;
+
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        -webkit-perspective: 150rem;
+        position: relative;
+        height: 43rem;
+
+    &__side {
+        font-size: 2rem;
+        height: 43rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
+        border-radius: 3px;
+
+        &--front {
+            background-color: $color-white;
+            border: 0.8px solid $color-grey-light-1;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+            text-align: center;
+
+            &-1 {
+                background-color: $kyle2;
+            }
+
+            &-2 {
+                background-color: $kyle4;
+            }
+
+            &-3 {
+                background-color: $kyle3;
+        }
+    }
+}
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        // clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+        // clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+        &--1 {
+            // background-image: linear-gradient(to right, $pk-orange-red, $kyle2), url(../img/fist-pump.jpg);
+            background-image: url(../img/code.jpg);
+        }
+
+        &--2 {
+            // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark), url(../img/code.jpg);
+            background-image: url(../img/trust.jpg);
+        }
+
+        &--3 {
+            // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/computer-desk.jpg);
+            background-image: url(../img/graphs.jpg);
+        }
+
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        text-shadow: 1px 2px 2px $color-black;
+    }
+
+    &__heading-span {
+        padding: .5rem 1rem;
+
+        & {
+            background-image: linear-gradient(to bottom, rgba($color-grey-light-3, .85), rgba($color-grey-dark-3, .85));
+            @include shadow-white;
+        }
+    }
+    }
+
+    .job-card--text {
+        color: $color-white;
+        text-align: center;
+        @include shadow-white;
+        border-bottom: 8px solid black;
+    }
+
+    .job-card--description {
+        color: $color-white;
+        font-size: 1.2rem;
+        margin: 5rem 3rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: black;
+        line-height: 1.9;
+
+        .fas {
+            color: $kyle2;
+        }
+    }
+}   
+    .pk-card__side .btn.btn-white,
+    .pk-card__side .btn.btn-white:link,
+    .pk-card__side .btn.btn-white:visited {
+        margin-top: 10rem;
+        @include shadows;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+}
+section.section-jobs {
+
+
+    & .job-card__details {
+        font-size: 1.4rem;
+        margin: 0 0 25px 0;
+        
+    
+        & .detail--border {
+            border-top: 10px solid $brite4;
+            transform: skewY(-5.5deg);
+            margin-top: -8px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 15px;
+          }
+    }
+
+}
+.pk-card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 43rem;
+
+    &__side {
+        font-size: 2rem;
+        height: 43rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        overflow: hidden;
+        border-radius: 3px;
+
+        &--front {
+            background-color: $color-white;
+            border: 0.8px solid $color-grey-light-1;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+            text-align: center;
+
+            &-1 {
+                background-color: $kyle2;
+            }
+
+            &-2 {
+                background-color: $kyle4;
+            }
+
+            &-3 {
+                background-color: $kyle3;
+        }
+    }
+}
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 120%, 25% 85%, 0 100%);
+        // clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+        clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%);
+
+        &--1 {
+            // background-image: linear-gradient(to right, $pk-orange-red, $kyle2), url(../img/fist-pump.jpg);
+            background-image: url(../img/code.jpg);
+        }
+
+        &--2 {
+            // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark), url(../img/code.jpg);
+            background-image: url(../img/trust.jpg);
+        }
+
+        &--3 {
+            // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/computer-desk.jpg);
+            background-image: url(../img/graphs.jpg);
+        }
+
+    }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        text-shadow: 1px 2px 2px $color-black;
+    }
+
+}
+
+// SLIDE JOB CARDS
+
+section.section-jobs-alt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    
+    & .grid-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: space-evenly;
+    }
+}
+
+.pk-card-slide {
+    position: absolute;
+    &:hover {
+        cursor: pointer;
+    }
+    &:nth-child(1) {
+        top: 0;
+        left: 30%;
+    }
+    &:nth-child(2) {
+        // top: 0;
+        left: 55%;
+    }
+    
+    & .slide__front,
+    & .slide__back {
+        display: block;
+        width: 25rem;
+        height: 35rem;
+        top: 0;
+        position: absolute;
+        overflow: hidden;
+        text-align: center;
+        border: 1px solid $color-black;
+        // @include shadows2;
+    }
+
+        .slide__front {
+        z-index: 20001;
+        transition: all .5s ease;
+        background-color: $color-white;
+
+        &__picture {
+            height: 12rem;
+            background-image: linear-gradient(to bottom, rgba($pk-light-blue, .5), rgba($color-grey-dark-3, .95)),url(/img/motherboard.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: all .5s ease-in-out;
+            
+            // background-image: linear-gradient(to bottom, $color-grey-light-1, transparent), url(/img/dark-keyboard.jpg);
+        }
+
+        &__heading {
+            position: absolute;
+            bottom: -40px;
+            @include absCenter;
+            color: $earth3;
+            font-size: 2.8rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-shadow: 0 0 5px #000;
+            margin: auto;
+            letter-spacing: 5px;
+            }
+
+        &__details{
+            background-color: $color-white;            
+            // background-image: linear-gradient(to bottom, $color-grey-light-1, transparent), url(/img/dark-keyboard.jpg);
+        }
+
+        &--description {
+            color: $color-black;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 22px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+    }
+
+    & .slide__back {
+        @include shadows2;
+        background-color: $kyle4;
+        z-index: 19999;
+
+        & h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: $color-white;
+            padding: 2rem;
+            margin-top: 5.5rem;
+            text-align: center;
+        }
+
+        .ui-slide {
+            margin: 0;
+            list-style-type: none;
+            
+        }
+
+        li {
+            padding: 1rem 2rem;
+            text-align: center;
+            border-top: 1px solid darken($kyle4, 5);
+            margin: 0 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 100;
+            color: $color-white;
+
+            &:hover {
+                text-decoration: underline lighten($kyle4, 25);
+            }
+
+        }
+    }
+
+        section.section-jobs-alt & .alt-btn.alt-btn--slide {
+            // position: absolute;
+            color: $color-black;
+            font-size: 1.6rem;
+            text-decoration: none;
+            text-transform: none;
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            bottom: 10px;
+            right: 15px;
+            padding: 10px;
+            background-image: linear-gradient(to right, $earth5, $earth10);
+            transition: all 0.5s ease-in;
+        }
+
+        &:hover {
+            .slide__front {
+                top: -300px;
+                transform: rotate(-50deg);
+            }
+        }
+}

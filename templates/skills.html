@@ -1,0 +1,58 @@
+<section class="section-skills margin-bottom-large">
+
+        <div class="container center-text">
+            <div class="row">
+                <div class="col-xl-2" ng-repeat="skill in skills.skills">
+                    <div class="feature-skills">
+                        <div class="skills-header">
+                            <i class=" {{ skill.icon }} bcard--logo"></i>
+                            <p class="skills--title">{{ skill.skill }}</p>
+                        </div>
+                        <p class="skills--desc">{{ skill.description }}</p>
+                        <div class="skills--footer">
+                            <p class="skills--year"><i class="card--email far fa-calendar" alt="Year Created"></i> {{ skill.yrCreated }}</p>
+                            <p class="skills--level"><i class="fas fa-level-up-alt skill-icon--level"></i> {{ skill.growth }}</p>
+                            <p class="skills--importance"><i class="skill-icon--importance fas fa-exclamation"></i> {{ skill.jump }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- <div class="pop--modal">
+    <div class="tooltip--skills tooltip--skills--regular light-theme" data-animation="shift" style="transition-duration: 375ms; left: 0px;">
+            <div class="arrow-regular" x-arrow="" style="top: 113px;"></div>
+            <div class="tippy-tooltip-content">
+                <div>
+                    <div class="pop">
+                            <div class="pop--content">
+                                <div class="pop--content__section"><span class="pop--content__styled"
+                                        color="get"> GET </span><span class="pop--content__plain">
+                                        /leagues </span></div><span class="pop--content__desc">
+                                    Get all available leagues </span>
+                            </div>
+                    <div class="pop--content">
+                            <div class="pop--content__section"><span class="pop--content__styled"
+                                    color="get"> GET </span><span class="pop--content__plain">
+                                    /leagues </span></div><span class="pop--content__desc">
+                                Get all available leagues </span>
+                        </div>
+                    <div class="pop--content">
+                        <div class="pop--content__section"><span class="pop--content__styled"> GET </span>
+                            <span class="pop--content__plain"> /leagues </span></div>
+                            <span class="pop--content__desc"> Get all available leagues </span>
+                    </div>
+                </div>
+                <div class="pop-footer--main"><span class="pop-footer--label"> Sports </span></div>
+                <div class="pop-footer">
+                    <span class="updated">Updated a day ago</span>
+                    <div class="cost">Freemium </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> -->
+    
+

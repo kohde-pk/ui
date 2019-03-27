@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+a.navigation__link:active,
+a.navigation__link:hover {
+    color: $pk-cherry-red;
+    text-decoration: none;
+    border-bottom: 8px $pk-gray;
+}
+
+p {
+    margin: 0;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.ml15 {
+    margin-left: 15px;
+}

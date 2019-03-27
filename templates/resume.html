@@ -1,0 +1,36 @@
+ <section class="section-resume">
+    <div ng-controller="resumeController">
+        <div class="container">
+            <div class="">
+                <h1 class="resume__header--name">{{ resume.name }}</h1>
+                <hr>
+            </div>
+            <div class="row resume__header">
+                <div class="resume__header--address">
+                    {{ resume.address }} {{ resume.city}} {{resume.state}} {{ resume.zip }}
+                </div>
+                <div class="resume__header--cell">
+                    {{ resume.cellPhone || resume.workPhone }}
+                </div>
+                <div class="resume__header--email">
+                        {{ resume.workEmail }}
+                </div>
+            </div>
+            <div class="row">
+                    <h1 class="resume__header--intro">{{ resume.intro }}</h1>
+            </div>
+            <div class="row resume--skills">
+                <h4>Skills:</h4>
+                <div class="resume--skill">
+                    <div class="skill" ng-repeat="skill in resume.skills"><i class="fas fa-check-circle"> </i>{{ skill }}</div>
+                </div>
+            </div>
+            <div class="row resume--exp">
+                <h4>Experience:</h4>
+                <div class="resume--exp">
+                    <!-- <div class="exp" ng-repeat="exp in resume.exps">{{ exp }}</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>

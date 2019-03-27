@@ -1,0 +1,173 @@
+// COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #aeaeae;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+$color-off-black: rgb(32, 32, 32);
+
+// ProKarma
+
+$pk-blue: #1b61dd;
+$pk-light-blue: #1abaca;
+$pk-dark-blue: #337ab7;
+$pk-red: #d4302a;
+$pk-gray: #636566;
+$pk-orange: #f9a523;
+$pk-light-orange: #fab753;
+$pk-gold: #fdc212;
+$pk-cherry-red: #eb3e37;
+$pk-orange-red: #f05e19;
+
+// Soft Tones
+
+$soft1: #c5d5cb;
+$soft2: #9fa8a3;
+$soft3: #e3e0cf;
+$soft4: #bfc1c3;
+
+// Simple
+
+$simple1: #e3e3e3;
+$simple2: #f6f6f8;
+$simple3:  #c60021;
+
+// Future
+
+$future: #bccbdc;
+$future2: #c2dde6;
+$future3: #e6e9f0;
+$future4: #431c5d;
+$future5: #e05915;
+$future6: #cdd422;
+
+// Cools
+
+$cool1: #383d3b;
+$cool2: #bcd8c1;
+$cool3: #439a86;
+$cool4: #e9d985;
+$cool5: #007991;
+
+// Kip
+
+$kip1: rgba(227, 181, 5, 1);
+$kip2: rgba(149, 25, 12, 1);
+$kip3: rgba(97, 3, 69, 1);
+$kip4: rgba(16, 126, 125, 1);
+$kip5: rgba(4, 75, 127, 1);
+
+// Kyle
+
+$kyle1: rgba(255, 216, 217, 1);
+$kyle2: rgba(116, 109, 117, 1);
+$kyle3: rgba(78, 99, 116, 1);
+$kyle4: rgba(55, 18, 60, 1);
+$kyle5: rgba(138, 130, 147, 1);
+
+// Coolors
+
+$coolor1: rgba(185, 216, 194, 1);
+$coolor2: rgba(154, 194, 201, 1);
+$coolor3: rgba(138, 161, 177, 1);
+$coolor4: rgba(74, 80, 67, 1);
+$coolor5: rgba(255, 203, 71, 1);
+
+// Web
+
+$web1: rgba(31, 39, 27, 1);
+$web2: rgba(25, 100, 126, 1);
+$web3: rgba(40, 175, 176, 1);
+$web4: rgba(244, 211, 94, 1);
+$web5: rgba(238, 150, 75, 1);
+
+// Pal
+
+$pal1: rgba(56, 61, 59, 1);
+$pal2: rgba(0, 121, 145, 1);
+$pal3: rgba(67, 154, 134, 1);
+$pal4: rgba(188, 216, 193, 1);
+$pal5: rgba(233, 217, 133, 1);
+
+// Deep
+
+$deeep1: rgba(116, 115, 124, 1);
+$deeep2: rgba(101, 100, 113, 1);
+$deeep3: rgba(89, 95, 105, 1);
+$deeep4: rgba(82, 84, 92, 1);
+$deeep5: rgba(202, 148, 145, 1);
+
+// Brite
+
+$brite1: rgba(241, 143, 1, 1);
+$brite2: rgba(4, 139, 168, 1);
+$brite3: rgba(46, 64, 87, 1);
+$brite4: rgba(153, 194, 77, 1);
+$brite5: rgba(47, 45, 46, 1);
+$brite6: rgb(15, 28, 46);
+
+// Daark
+
+$daark1: rgba(5, 102, 141, 1);
+$daark2: rgba(66, 122, 161, 1);
+$daark3: rgb(94, 101, 109);
+$daark4: rgba(103, 148, 54, 1);
+$daark5: rgba(165, 190, 0, 1);
+$daark6: rgb(20, 32, 8);
+$daark7: rgb(33, 35, 37);
+$daark18: rgb(2, 49, 68);
+
+$earth1: rgba(66, 62, 55, 1);
+$earth2: rgba(227, 178, 60, 1);
+$earth3: rgba(237, 235, 215, 1);
+$earth4: rgba(163, 149, 148, 1);
+$earth5: rgba(110, 103, 95, 1);
+$earth6: #BDD6CB;
+$earth7: #8DB3B9;
+$earth8: #9A9B72;
+$earth9: #706372;
+$earth10: #749398;
+
+// Somber
+
+$somber1: rgba(79, 49, 48, 1);
+$somber2: rgba(117, 55, 66, 1);
+$somber3: rgba(170, 80, 66, 1);
+$somber4: rgba(216, 189, 138, 1);
+$somber5: rgba(216, 215, 143, 1);
+
+// Use for creating long shadow on text
+$color-text-shadow: #999;
+
+
+// FONT
+$default-font-size: 1.6rem;
+
+
+// GRID
+$grid-width: 100vw;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+$gutter-with-lm: 8rem;
+$lm: 2rem;
+
+// WHERE LOCATION
+$loc-card-height: 80vh;
+$loc-card-width: 50vw;
+

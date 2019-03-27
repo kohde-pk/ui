@@ -1,0 +1,60 @@
+section.section-aboutus {
+    outline: none;
+
+    .feature-box {
+        background-color: $earth3;
+        cursor: pointer;
+
+        &__text {
+            line-height: 1.4;
+        };
+    }
+
+    div.container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    // button.btn--rect,
+    // button.btn--rect:link,
+    // button.btn--rect:visited {
+    //     background-color: $earth7;
+    //     font-size: 1rem;
+    //     padding: 6px;
+    //     color: $color-white;
+    //     border-radius: 10px;
+    //     bottom: 10px;
+    //     right: 10px;
+    //     position: absolute;
+
+    //     &:hover {
+    //         box-shadow: 2px 2px 4px rgba($color-black, .45);
+    //     }
+    // }
+
+    .heading-tertiary {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        border-bottom: 6px solid $earth5;
+    }
+
+    // Popover styling no longer worked in Bootstrap 4
+
+    .popover-content,
+    .feature--text,
+    .popover .my-popover,
+    .popover-body {
+        background-color: white;
+        color: $pk-dark-blue;
+    }
+    .popover-title,
+    .popover .my-popover,
+    .feature--text,
+    .popover-header {
+        background-color: $pk-cherry-red;
+        color: $color-white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

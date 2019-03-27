@@ -1,0 +1,177 @@
+section.section-grid {
+    position: relative;
+}
+
+section.section-grid .heading-secondary {
+    font-family: 'Nunito', sans-serif;
+}
+
+.grid-container,
+.grid-container-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 10rem);
+    grid-template-rows: repeat(auto-fit, 10rem);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 15px 0;
+    grid-auto-flow: dense;
+}
+.grid-item {
+    // center content of items
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: $color-black;
+    // border: 1px solid $pk-gray;
+    background-color: white;
+    font-size: 3rem;    
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    @include shadow6;
+    transition: all .5s;
+    // border-radius: 15px;
+
+    &:hover {
+        box-shadow : 6px 6px 6px rgba($color-black, 0.5);
+        border: 1px solid $web3;
+        // transform: rotateY(45deg) translateX(0px) translateY(0px);
+        // animation: slideBack 1s;
+        transform: scale(1.1);
+        transform: translateX(-40px) translateY(-20%) rotateZ(-45deg);
+        -webkit-transform: translateX(-40px) translateY(-20%) rotateZ(-45deg);
+
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+}
+.grid-item1,
+.grid-item18,
+.grid-item28 {
+    grid-column: span 2;
+}
+.grid-item10 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.grid-item5 {
+    grid-column: 1 / 3;
+}
+.grid-item19 {
+    grid-column: 5 / -1; //start at col 1, end at last col
+}
+.grid-item9 {
+    grid-row: span 2;
+}
+
+.grid-container {
+    z-index: 2;
+    & >.grid-item.front:nth-child(2n) {
+        background: $web3;
+        color: $color-white;
+    }
+    .grid-item.front:nth-child(5n),
+    .grid-item29 {
+        background: $web2;
+        color: $color-white;
+    }
+    .grid-item.front:nth-child(6n),
+    .grid-item.front:nth-child(11n) {
+        background: $web1;
+        color: $color-white;
+    }
+    .grid-item.front:nth-child(7n),
+    .grid-item1.front {
+        background: $web4;
+        color: $color-white;
+    }
+    .grid-item14.front {
+        background: $web5 !important;
+    }
+    .grid-item.front:nth-child(8n) {
+        background: $web3;
+        color: $color-white;
+    }
+    .grid-item.front:nth-child(9n) {
+        background: $web5;
+        color: $color-white;
+    }
+}
+
+.grid-container-back {
+    z-index: 1;
+    .grid-item:nth-child(2n) {
+        background: $kip1;
+        color: $color-white;
+    }
+    .grid-item:nth-child(5n) {
+        background: $kip2;
+        color: $color-white;
+    }
+    .grid-item:nth-child(6n),
+    .grid-item:nth-child(11n) {
+        background: $kip3;
+        color: $color-white;
+    }
+    .grid-item:nth-child(7n),
+    .grid-item1,
+    .grid-item19 {
+        background: $kip5;
+        color: $color-white;
+    }
+    .grid-item14 {
+        background: $kip5 !important;
+    }
+    .grid-item:nth-child(8n) {
+        background: $kip3;
+        color: $color-white;
+    }
+    .grid-item:nth-child(9n) {
+        background: $kip5;
+        color: $color-white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(6, 10%);
+        grid-template-rows: repeat(auto-fit, 10%);
+        grid-row-gap: 5px;
+        // justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 5rem);
+        grid-template-rows: repeat(auto-fit, 5rem);
+        grid-row-gap: 5px;
+        // justify-content: space-around;
+    }
+}
+@keyframes slideBack {
+    0% {
+        opacity: 1;
+        transform: translateY(-100px);
+        // z-index: -1;
+    }
+    25% {
+        opacity: .8;
+        transform: translateY(-50px);
+    }
+    50% {
+        opacity: .5;
+        transform: translateY(-20px);
+    }
+    75% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+    }
+}

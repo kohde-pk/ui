@@ -1,0 +1,42 @@
+// .section-about {
+//     background-color: $color-grey-light-1;
+//     margin-top: -75vh;
+//     margin-left: 17rem;
+// }
+
+// .section-features {
+//     background-color: $color-grey-light-1;
+//     margin-top: -75vh;
+// }
+
+// .section-tours {
+//     background-color: $color-grey-light-1;
+//     padding: 25rem 0 50rem 0;
+//     margin-top: -10rem;
+// }
+
+
+
+@media (max-width: 500px) {
+    .navigation__link,
+    .navigation__link:link,
+    .navigation__link:active {
+        font-size: 1.4rem;
+        width: 18rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .navigation__link,
+    .navigation__link:link,
+    .navigation__link:active {
+        font-size: 1rem;
+        width: 16rem;
+    }
+
+    .navigation__card-header,
+    .navigation__list {
+        display: none;
+        width: 0;
+    }
+}
