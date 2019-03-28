@@ -1,36 +1,10 @@
-body {
-    background-image: linear-gradient(to bottom right, $brite3, $brite2);
-    margin: 0;
-    padding: 0;
-    width: 100vw; 
-    height: 100vh;
-
-    &.color1 {
-        background-image: linear-gradient(to bottom right, $daark1, $daark18);
-    }
-    &.color2 {
-        background-image: linear-gradient(to bottom right, $color-black, lighten($color-black, 30));
-    }
-    &.color3 {
-        background-image: linear-gradient(to bottom right, $daark7, $daark3);
-    }
-    &.color4 {
-        background-image: linear-gradient(to bottom right, $daark6, $daark4);
-    }
-    &.color5 {
-        background-image: linear-gradient(to bottom right, $brite6, $brite3);
-    }
-    &.color6 {
-        background-image: linear-gradient(to bottom right, $color-white, $soft4);
-    }
-}
 
 section.section-facts {
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     .card-container {
         display: grid;
-        grid-template-columns: repeat(4, 25rem);
+        grid-template-columns: repeat(autofit, 25rem);
         justify-content: space-evenly;
         height: 100%;
         // @include absCenterV;
@@ -38,6 +12,7 @@ section.section-facts {
     }
 
     & .fact {
+        position: relative;
         width: 25rem;
         height: 30rem;
         transition: all 0.4s ease;

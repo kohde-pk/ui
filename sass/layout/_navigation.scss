@@ -1,105 +1,105 @@
-.navigation {
+// .navigation {
     
-    &__card-header {
-        color: $pk-gray;
-    }
+//     &__card-header {
+//         color: $pk-gray;
+//     }
 
-    &__background {
-        height: 6rem;
-        width: 6rem;
-        border-radius: 50%;
-        position: fixed;
-        top: 60rem;
-        left: 6.5rem;
-    }
+//     &__background {
+//         height: 6rem;
+//         width: 6rem;
+//         border-radius: 50%;
+//         position: fixed;
+//         top: 60rem;
+//         left: 6.5rem;
+//     }
 
-    &__nav {
-        position: fixed;
-        top: 14rem;
-        left: 2.5rem;
-        width: 20rem;
-        font-size: 2rem;
-        text-transform: uppercase;
-        z-index: 100;
-    }
+//     &__nav {
+//         position: fixed;
+//         top: 14rem;
+//         left: 2.5rem;
+//         width: 20rem;
+//         font-size: 2rem;
+//         text-transform: uppercase;
+//         z-index: 100;
+//     }
 
 
-    &__list {
-        position: absolute;
-        list-style: none;
-        width: 100%;
-    }
+//     &__list {
+//         position: absolute;
+//         list-style: none;
+//         width: 100%;
+//     }
 
-    &__item {
-        border-bottom: 8px solid transparent;
-        margin: 0 1rem ;
-    }
+//     &__item {
+//         border-bottom: 8px solid transparent;
+//         margin: 0 1rem ;
+//     }
 
-    &__item:hover,
-    &__item:active {
-        border-bottom: 8px solid rgba($pk-gray, .6);
-    }
+//     &__item:hover,
+//     &__item:active {
+//         border-bottom: 8px solid rgba($pk-gray, .6);
+//     }
 
-    &__link,
-    &__link:link,
-    &__link:active {
-        display: inline-block;
-        font-size: 2rem;
-        font-weight: 400;
-        color: $pk-red;
-        text-decoration: none;
-        text-transform: uppercase;
-        // background-size: 220%;
-    }
+//     &__link,
+//     &__link:link,
+//     &__link:active {
+//         display: inline-block;
+//         font-size: 2rem;
+//         font-weight: 400;
+//         color: $pk-red;
+//         text-decoration: none;
+//         text-transform: uppercase;
+//         // background-size: 220%;
+//     }
         
 
-// fuctionality
+// // fuctionality
 
-&__checkbox:checked ~ &__nav {
-    opacity: 1;
-    width: 100%;
-}
+// &__checkbox:checked ~ &__nav {
+//     opacity: 1;
+//     width: 100%;
+// }
 
-// icon
+// // icon
 
-    &__icon {
-        position: relative;
-        margin-top: 3.5rem;
+//     &__icon {
+//         position: relative;
+//         margin-top: 3.5rem;
 
-        &,
-        &::before,
-        &::after {
-            width: 3rem;
-            height: 2px;
-            background-color: $color-grey-dark-3;
-            display: inline-block;
-        }
+//         &,
+//         &::before,
+//         &::after {
+//             width: 3rem;
+//             height: 2px;
+//             background-color: $color-grey-dark-3;
+//             display: inline-block;
+//         }
 
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            transition: all .2s;
-        }
+//         &::before,
+//         &::after {
+//             content: "";
+//             position: absolute;
+//             left: 0;
+//             transition: all .2s;
+//         }
         
-        &::before {
-            top: -.8rem;
-        }
-        &::after {
-            top: .8rem;
-        }
+//         &::before {
+//             top: -.8rem;
+//         }
+//         &::after {
+//             top: .8rem;
+//         }
 
-        &__button::hover &__icon::before {
-            top: -1rem;
-        }
+//         &__button::hover &__icon::before {
+//             top: -1rem;
+//         }
 
-        &__button::hover &__icon::after {
-            top: 1rem;
-        }
+//         &__button::hover &__icon::after {
+//             top: 1rem;
+//         }
 
-    }
-} 
+//     }
+// } 
 
 nav {
     &.nav__banner {
@@ -137,10 +137,14 @@ nav {
             & ul li.dropper--color {
                 text-decoration: none;
                 display: inline-grid;
-                margin: -5px 0 0 14px;
+                margin: -5px 0 0 10px;
                 cursor: pointer;
                 z-index: 50001;
                 animation: bouncer 2s ease;
+
+                &:first-child {
+                    padding-left: 5px;
+                }
 
                 &.color1 {
                     color: $daark1;
@@ -177,13 +181,14 @@ nav {
             outline: none;
             cursor: pointer;
             z-index: 51000;
-            transition: all 4ms ease;
+            transition: all 1s ease;
 
             &.open__button {
                 & span:nth-child(1) {
                     top: 20px;
                     transform: rotate(45deg);
                     background-color: white;
+                    transition: all 0.5s ease;
                 }
                 & span:nth-child(2) {
                     display: none;
@@ -229,6 +234,7 @@ nav {
                 list-style-type: none;
                 text-decoration: none;
                 align-items: left;
+                animation: seepIn 2s ease;
 
                 &.link1 {
                     bottom: 310px;
@@ -307,12 +313,14 @@ nav {
         position: fixed;
         width: 0;
         height: 0;
-        transform-origin: 100% 0%;
+        transform-origin: 100% 10%;
         background-color: $color-black;
+        opacity: .5;
         z-index: 10000;
         font-size: 1.6rem;
         top: 0px;
         right: 0px;
+        transition: all 1s ease-in-out;
         
         &.show__big-circle {
             width: 350px;
@@ -322,6 +330,30 @@ nav {
             box-shadow: -1px 3px 6px rgba(0,0,0,0.25);
         }
 
+    }
+    @media screen and (max-width: 768px) {
+        &.nav__banner div.dropper {
+            top: 25px;
+            left: 10px;
+        }
+        ul.dropper--colors {
+            background-image: linear-gradient(to bottom,transparent,$color-white,$color-white,transparent);
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            padding: 12px;
+            
+            @include shadow3;
+
+        }
+       &.nav__banner div.dropper ul li.dropper--color {
+            padding-bottom: 5px;
+            margin: 0 auto;
+            
+            &:first-child {
+                padding-left: 0;
+            }
+        }
     }
 
 
@@ -382,3 +414,15 @@ nav {
         transform: scale(1, 1) translateY(0);
     }
 }
+
+    @keyframes seepIn {
+        0% {
+            opacity: 0;
+        }
+        80% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }

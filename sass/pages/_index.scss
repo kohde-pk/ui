@@ -1,3 +1,31 @@
+body {
+    background-image: linear-gradient(to bottom right, $brite3, $brite2);
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+
+    &.color1 {
+        background-image: linear-gradient(to bottom right, $daark1, $daark18);
+    }
+    &.color2 {
+        background-image: linear-gradient(to bottom right, $color-black, lighten($color-black, 30));
+    }
+    &.color3 {
+        background-image: linear-gradient(to bottom right, $daark7, $daark3);
+    }
+    &.color4 {
+        background-image: linear-gradient(to bottom right, $daark6, $daark4);
+    }
+    &.color5 {
+        background-image: linear-gradient(to bottom right, $brite6, $brite3);
+    }
+    &.color6 {
+        background-image: linear-gradient(to bottom right, $color-white, $soft4);
+    }
+}
 
 .content {
     position: relative;
@@ -7,8 +35,8 @@
 .banner .icon-js {
     position: absolute;
     padding-top: 20rem;
-    left: 40%;
-    margin-left: -200px;
+    // left: 40%;
+    margin-left: 10%;
     z-index: 20000;
     opacity: .3;
 
@@ -33,20 +61,20 @@
     position: absolute;
     padding-top: 21rem;
     // left: 19%;
-    margin-left: 200px;
+    margin-left: 50%;
     z-index: -1;
     opacity: .3;
     
     .img-css {
-        animation: float-css 3.1s ease-in-out infinite;
+        animation: float-css 3.1s ease-in-out infinite 0.3s;
     }
 }
 
 .banner .icon-mouse {
     position: absolute;
     padding-top: 24rem;
-    left: 52%;
-    margin-left: -200px;
+    // left: 52%;
+    margin-left: 25%;
     z-index: -1;
     opacity: .3;
     
@@ -58,20 +86,20 @@
 .banner .icon-git {
     position: absolute;
     padding-top: 24rem;
-    left: 36%;
-    margin-left: -200px;
+    // left: 36%;
+    margin-left: 75%;
     z-index: -1;
     opacity: .3;
     
     .img-git {
-        animation: float-git 2.9s ease-in-out infinite;
+        animation: float-git 2.9s ease-in-out infinite 0.5s; 
 
     }
 
 }
 
 @keyframes float-js {
-	0% {transform: translateY(0px); opacity: 0.0;}
+	0% {transform: translateY(80px); opacity: 0.0;}
     18% {opacity: 0.5;}
     50% {opacity: 0.75;}
 	85% {opacity: 0.5;}	

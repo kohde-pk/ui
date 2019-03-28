@@ -3,7 +3,6 @@ section.section-jobs {
     .pk-card {
         width: 250px;
         margin: 20px 0;
-
         perspective: 150rem;
         -moz-perspective: 150rem;
         -webkit-perspective: 150rem;
@@ -66,18 +65,18 @@ section.section-jobs {
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
         &--1 {
-            // background-image: linear-gradient(to right, $pk-orange-red, $kyle2), url(../img/fist-pump.jpg);
-            background-image: url(../img/code.jpg);
+            // background-image: linear-gradient(to right, $pk-orange-red, $kyle2), url(/uiexperiments/img/fist-pump.jpg);
+            background-image: url(/uiexperiments/img/code.jpg);
         }
 
         &--2 {
-            // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark), url(../img/code.jpg);
-            background-image: url(../img/trust.jpg);
+            // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark), url(/uiexperiments/img/code.jpg);
+            background-image: url(/uiexperiments/img/trust.jpg);
         }
 
         &--3 {
-            // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/computer-desk.jpg);
-            background-image: url(../img/graphs.jpg);
+            // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(/uiexperiments/img/computer-desk.jpg);
+            background-image: url(/uiexperiments/img/graphs.jpg);
         }
 
     }
@@ -254,123 +253,120 @@ section.section-jobs-alt {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     height: 100vh;
+
     
     & .grid-container {
         position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-content: space-evenly;
-    }
-}
-
-.pk-card-slide {
-    position: absolute;
-    &:hover {
-        cursor: pointer;
-    }
-    &:nth-child(1) {
-        top: 0;
-        left: 30%;
-    }
-    &:nth-child(2) {
-        // top: 0;
-        left: 55%;
+        z-index: 1;
     }
     
-    & .slide__front,
-    & .slide__back {
-        display: block;
-        width: 25rem;
-        height: 35rem;
-        top: 0;
-        position: absolute;
-        overflow: hidden;
-        text-align: center;
-        border: 1px solid $color-black;
-        // @include shadows2;
-    }
-
-        .slide__front {
-        z-index: 20001;
-        transition: all .5s ease;
-        background-color: $color-white;
-
-        &__picture {
-            height: 12rem;
-            background-image: linear-gradient(to bottom, rgba($pk-light-blue, .5), rgba($color-grey-dark-3, .95)),url(/img/motherboard.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            transition: all .5s ease-in-out;
-            
-            // background-image: linear-gradient(to bottom, $color-grey-light-1, transparent), url(/img/dark-keyboard.jpg);
+    .pk-card-slide {
+        
+        &:hover {
+            cursor: pointer;
         }
-
-        &__heading {
+        
+        & .slide__front,
+        & .slide__back {
+            display: block;
+            width: 25rem;
+            height: 35rem;
+            top: 0;
             position: absolute;
-            bottom: -40px;
-            @include absCenter;
-            color: $earth3;
-            font-size: 2.8rem;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            text-shadow: 0 0 5px #000;
-            margin: auto;
-            letter-spacing: 5px;
-            }
-
-        &__details{
-            background-color: $color-white;            
-            // background-image: linear-gradient(to bottom, $color-grey-light-1, transparent), url(/img/dark-keyboard.jpg);
-        }
-
-        &--description {
-            color: $color-black;
-            font-size: 1.2rem;
+            overflow: hidden;
             text-align: center;
-            margin: 22px;
-            user-select: none;
-            -webkit-user-select: none;
+            border: 1px solid $color-black;
+            // @include shadows2;
         }
-    }
-
-    & .slide__back {
-        @include shadows2;
-        background-color: $kyle4;
-        z-index: 19999;
-
-        & h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            color: $color-white;
-            padding: 2rem;
-            margin-top: 5.5rem;
-            text-align: center;
-        }
-
-        .ui-slide {
-            margin: 0;
-            list-style-type: none;
+        
+        .slide__front {
+            z-index: 20001;
+            transition: all .5s ease;
+            background-color: $color-white;
             
-        }
-
-        li {
-            padding: 1rem 2rem;
-            text-align: center;
-            border-top: 1px solid darken($kyle4, 5);
-            margin: 0 20px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 100;
-            color: $color-white;
-
-            &:hover {
-                text-decoration: underline lighten($kyle4, 25);
+            &__picture {
+                height: 12rem;
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: all .5s ease-in-out;
+                
+                &:first-child {
+                    background-image: linear-gradient(to bottom, rgba($pk-light-blue, .5), rgba($color-grey-dark-3, .95)), url(/uiexperiments/img/motherboard.jpg);
+                }
+                &:nth-child(2) {
+                    background-image: linear-gradient(to bottom, $color-grey-light-1, transparent), url(/uiexperiments/img/dark-keyboard.jpg);
+                }
             }
-
+            
+            &__heading {
+                position: absolute;
+                bottom: -40px;
+                @include absCenter;
+                color: $earth3;
+                font-size: 2.8rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                text-shadow: 0 0 5px #000;
+                margin: auto;
+                letter-spacing: 5px;
+            }
+            
+            &__details{
+                background-color: $color-white;            
+                // background-image: linear-gradient(to bottom, $color-grey-light-1, transparent), url(/img/dark-keyboard.jpg);
+            }
+            
+            &--description {
+                color: $color-black;
+                font-size: 1.2rem;
+                text-align: center;
+                margin: 22px;
+                user-select: none;
+                -webkit-user-select: none;
+            }
         }
-    }
-
-        section.section-jobs-alt & .alt-btn.alt-btn--slide {
+        
+        & .slide__back {
+            @include shadows2;
+            background-color: $kyle4;
+            z-index: 19999;
+            
+            & h3 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                color: $color-white;
+                padding: 2rem;
+                margin-top: 5.5rem;
+                text-align: center;
+            }
+            
+            .ui-slide {
+                margin: 0;
+                list-style-type: none;
+                
+            }
+            
+            li {
+                padding: 1rem 2rem;
+                text-align: center;
+                border-top: 1px solid darken($kyle4, 5);
+                margin: 0 20px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.4rem;
+                font-weight: 100;
+                color: $color-white;
+                
+                &:hover {
+                    text-decoration: underline lighten($kyle4, 25);
+                }
+                
+            }
+        }
+        
+        & .alt-btn.alt-btn--slide {
             // position: absolute;
             color: $color-black;
             font-size: 1.6rem;
@@ -385,11 +381,12 @@ section.section-jobs-alt {
             background-image: linear-gradient(to right, $earth5, $earth10);
             transition: all 0.5s ease-in;
         }
-
+        
         &:hover {
             .slide__front {
                 top: -300px;
                 transform: rotate(-50deg);
             }
         }
+    }
 }

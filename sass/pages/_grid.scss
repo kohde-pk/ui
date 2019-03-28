@@ -1,8 +1,7 @@
 section.section-grid {
     position: relative;
-}
 
-section.section-grid .heading-secondary {
+& .heading-secondary {
     font-family: 'Nunito', sans-serif;
 }
 
@@ -174,4 +173,5 @@ section.section-grid .heading-secondary {
     100% {
         opacity: 0;
     }
+}
 }

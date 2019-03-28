@@ -6,15 +6,15 @@ $cardBackground: darken($pk-gray,5);
 section, footer, nav {
   display: block;
 }
-body {
-  -webkit-text-size-adjust: none;
-  background: $pk-gray;
-  font-family: 'Montserrat', sans-serif; 
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.4em;
-  padding: 3em;
-}
+// body {
+//   -webkit-text-size-adjust: none;
+//   background: $pk-gray;
+//   font-family: 'Montserrat', sans-serif; 
+//   font-weight: 300;
+//   font-size: 14px;
+//   line-height: 1.4em;
+//   padding: 3em;
+// }
 a {
   text-decoration: none;
   color: #333;
