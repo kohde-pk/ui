@@ -1,67 +1,62 @@
 <section class="section-employees">
-        <div class="center-text margin-bottom-medium">
+    <div class="container">
+        <div class="business-card">
+            <div class="feature-employees">
+                <img src="img/prokarma_icon_black.svg" alt="" width="30px" height="30px" class="bcard--logo">
+                <p class="card--name">{{ resume.name }}</p>
+                <p class="card--title">{{ resume.title }}</p>
+        
+                <div class="card--contact">
+                    <p class="card--phone"><i class="card--phone__icon fas fa-phone"></i></i> {{ resume.workPhone }}</p>
+                    <p class="card--phone"><i class="card--phone__icon fas fa-mobile-alt"></i></i> {{ resume.cellPhone }}</p>
+                    <p class="card--email"><i class="card--email far fa-envelope"></i> {{ resume.workEmail }}</p>
+                </div>
+                <div>
+                    <button id="Resume" class="btn btnResume" href="#">More Info</button>
+                </div>
+            </div>
+            <div class="linked-in">
+                <i class="fab fa-linkedin fa-5x"></i>
+                <span class="linkedin-link"><a href="https://www.linkedin.com/in/kathleenohde/">View my LinkedIn profile</a></span>
+            </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="business-card col-sm-3">
-                    <div class="feature-employees">
-                        <img src="img/prokarma_icon_black.svg" alt="" width="30px" height="30px" class="bcard--logo">
-                        <p class="card--name">{{ resume.name }}</p>
-                        <p class="card--title">{{ resume.title }}</p>
+        <div class="resume">
+            <div class="">
+                <p class="resume__header--name">{{ resume.name }}</p>
                 
-                        <div class="card--contact">
-                            <p class="card--phone"><i class="card--phone__icon fas fa-phone"></i></i> {{ resume.workPhone }}</p>
-                            <p class="card--phone"><i class="card--phone__icon fas fa-mobile-alt"></i></i> {{ resume.cellPhone }}</p>
-                            <p class="card--email"><i class="card--email far fa-envelope"></i> {{ resume.workEmail }}</p>
-                        </div>
-                        <div>
-                            <button id="Resume" class="btn btnResume" href="#">More Info</button>
-                        </div>
-                    </div>
-                    <div class="linked-in">
-                        <i class="fab fa-linkedin fa-5x"></i>
-                        <span class="linkedin-link"><a href="https://www.linkedin.com/in/kathleenohde/">View my LinkedIn profile</a></span>
-                    </div>
+            </div>
+            <div class="resume__header">
+                <div class="resume__header--address">
+                    {{ resume.address }} {{ resume.city}} {{resume.state}} {{ resume.zip }}
                 </div>
-                <div class="resume col-sm-6">
-                    <div class="">
-                        <p class="resume__header--name">{{ resume.name }}</p>
-                        
-                    </div>
-                    <div class="row resume__header">
-                        <div class="resume__header--address">
-                            {{ resume.address }} {{ resume.city}} {{resume.state}} {{ resume.zip }}
-                        </div>
-                        <div class="resume__header--cell">
-                            {{ resume.cellPhone || resume.workPhone }}
-                        </div>
-                        <div class="resume__header--email">
-                            {{ resume.workEmail }}
-                        </div>
-                    </div>
-                    <div>
-                        <h6>About Me:</h6>
+                <div class="resume__header--cell">
+                    {{ resume.cellPhone || resume.workPhone }}
+                </div>
+                <div class="resume__header--email">
+                    {{ resume.workEmail }}
+                </div>
+            </div>
+            <div>
+                <h6>About Me:</h6>
 
-                        <p class="resume__header--intro">{{ resume.intro }}</p>
-                    </div>
-                    <div class="resume--skills">
-                        <h6>Skills:</h6>
-                    </div>
-                    <div class="skills">
-                        <div class="resume--skill">
-                            <div class="skill" ng-repeat="skill in resume.skills"> <i class="fas fa-check-circle"> </i>&nbsp;{{ skill }}&nbsp;</div>
-                        </div>
-                    </div>
-                        
-                    <div class="resume--exp">
-                        <h6>Experience:</h6>
-                        <div class="resume--exp"></div>
-                            <div class="exp" ng-repeat="exp in resume.experience">{{ exp.company }}, {{ exp.date }}
-                                <p class="job--title">{{ exp.title }}</p>
-                            </div>
-                            
-                        </div>
+                <p class="resume__header--intro">{{ resume.intro }}</p>
+            </div>
+            <div class="resume--skills">
+                <h6>Skills:</h6>
+            </div>
+            <div class="skills">
+                <div class="resume--skill">
+                    <div class="skill" ng-repeat="skill in resume.skills"> <i class="fas fa-check-circle"> </i>&nbsp;{{ skill }}&nbsp;</div>
                 </div>
+            </div>
+                
+            <div class="resume--exp">
+                <h6>Experience:</h6>
+                <div class="resume--exp"></div>
+                <div class="exp" ng-repeat="exp in resume.experience">{{ exp.company }}, {{ exp.date }}
+                    <p class="job--title">{{ exp.title }}</p>
+                </div>
+                
             </div>
         </div>
     </div>

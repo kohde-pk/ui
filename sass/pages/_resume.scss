@@ -1,23 +1,24 @@
 
 .section-resume {
     @include shadows2;
-    max-width: 70%;
     margin: 15rem auto 2rem;
     border: .5px solid rgb(233, 233, 233);
 
     div.container {
-        width: 95%;
+        display: grid;
+        grid-template-columns: minmax(340px, 1fr) minmax(500px, 2fr);
+        grid-template-rows: 175px autofit;
+        grid-row-gap: 25px;
+    
     }
-    div.row {
-        margin-bottom: 0;
 
-    }
     hr {
         width: 100px;
         color: black;
         margin-bottom: 0;
     }
 }
+
 .resume {
     display: inline-grid;
     grid-template-columns: 1fr;
@@ -37,12 +38,18 @@
 }
 
 .resume__header {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     margin-top: -11px;
     margin-bottom: 20px;
+
+    &--address,
+    &--cell,
+    &--email {
+        align-self: center;
+    }
     
     &--intro {
         font-size: 10px;
@@ -53,12 +60,11 @@
         
 
     }
-
 }
 
 div.resume--skill {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-column-gap: 10px;
     justify-content: space-around;
     margin-left: 10px;
@@ -81,7 +87,17 @@ div.exp {
 
 
 
-.section-employees button.btn.btnResume {
+.section-employees .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr) minmax(320px, 2fr));
+    grid-template-rows: minmax(200px, 1fr) minmax(autofit, 5fr);
+    grid-row-gap: 70px;
+    justify-content: center;
+    justify-content: space-around;
+    
+} 
+
+button.btn.btnResume {
     visibility: visible;
     padding: 3px;
     background-color: $pk-orange;

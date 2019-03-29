@@ -4,8 +4,9 @@ section.section-facts {
     // height: 100vh;
     .card-container {
         display: grid;
-        grid-template-columns: repeat(autofit, 25rem);
+        grid-template-columns: repeat(auto-fit, 260px);
         justify-content: space-evenly;
+        grid-gap: 20px;
         height: 100%;
         // @include absCenterV;
         margin-top: 5px;

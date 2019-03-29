@@ -1,5 +1,9 @@
 section .section-comment {
-  margin-top: 1px;
+
+  & .container {
+    margin-top: 3rem;
+
+  }
 }
 
 .cards {

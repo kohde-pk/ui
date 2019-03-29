@@ -920,8 +920,10 @@ section.section-aboutus {
       line-height: 1.4; }
   section.section-aboutus div.container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px; }
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-auto-rows: 400px;
+    grid-gap: 20px;
+    justify-content: center; }
   section.section-aboutus .heading-tertiary {
     padding-top: 10px;
     margin-bottom: 10px;
@@ -941,8 +943,8 @@ section.section-aboutus {
     text-transform: uppercase;
     text-align: center; }
 
-section .section-comment {
-  margin-top: 1px; }
+section .section-comment .container {
+  margin-top: 3rem; }
 
 .cards {
   position: relative;
@@ -1051,8 +1053,9 @@ section.section-facts {
   width: 100vw; }
   section.section-facts .card-container {
     display: grid;
-    grid-template-columns: repeat(autofit, 25rem);
+    grid-template-columns: repeat(auto-fit, 260px);
     justify-content: space-evenly;
+    grid-gap: 20px;
     height: 100%;
     margin-top: 5px; }
   section.section-facts .fact {
@@ -1511,6 +1514,115 @@ body {
     transform: translateY(-80px);
     opacity: 0.0; } }
 
+section.section-jobs-alt {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  height: 100%; }
+  section.section-jobs-alt div.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-auto-rows: minmax(400px, auto);
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 80px;
+    z-index: 1; }
+  section.section-jobs-alt div.pk-card-slide {
+    justify-self: center;
+    margin-right: 210px; }
+    section.section-jobs-alt div.pk-card-slide:first-child {
+      justify-self: end; }
+    section.section-jobs-alt div.pk-card-slide:last-child {
+      justify-self: start; }
+    section.section-jobs-alt div.pk-card-slide:hover {
+      cursor: pointer; }
+    section.section-jobs-alt div.pk-card-slide .slide__front,
+    section.section-jobs-alt div.pk-card-slide .slide__back {
+      display: block;
+      width: 25rem;
+      height: 35rem;
+      position: absolute;
+      overflow: hidden;
+      text-align: center;
+      border: 1px solid #000; }
+    section.section-jobs-alt div.pk-card-slide .slide__front {
+      z-index: 20001;
+      transition: all .5s ease;
+      background-color: #fff; }
+      section.section-jobs-alt div.pk-card-slide .slide__front__picture {
+        height: 12rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .5s ease-in-out; }
+        section.section-jobs-alt div.pk-card-slide .slide__front__picture:first-child {
+          background-image: linear-gradient(to bottom, rgba(26, 186, 202, 0.5), rgba(51, 51, 51, 0.95)), url(/uiexperiments/img/motherboard.jpg); }
+        section.section-jobs-alt div.pk-card-slide .slide__front__picture:nth-child(2) {
+          background-image: linear-gradient(to bottom, #f7f7f7, transparent), url(/uiexperiments/img/dark-keyboard.jpg); }
+      section.section-jobs-alt div.pk-card-slide .slide__front__heading {
+        position: absolute;
+        bottom: -40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #edebd7;
+        font-size: 2.8rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-shadow: 0 0 5px #000;
+        margin: auto;
+        letter-spacing: 5px; }
+      section.section-jobs-alt div.pk-card-slide .slide__front__details {
+        background-color: #fff; }
+      section.section-jobs-alt div.pk-card-slide .slide__front--description {
+        color: #000;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 22px;
+        user-select: none;
+        -webkit-user-select: none; }
+    section.section-jobs-alt div.pk-card-slide .slide__back {
+      box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+      background-color: #37123c;
+      z-index: 19999; }
+      section.section-jobs-alt div.pk-card-slide .slide__back h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        padding: 2rem;
+        margin-top: 5.5rem;
+        text-align: center; }
+      section.section-jobs-alt div.pk-card-slide .slide__back .ui-slide {
+        margin: 0;
+        list-style-type: none; }
+      section.section-jobs-alt div.pk-card-slide .slide__back li {
+        padding: 1rem 2rem;
+        text-align: center;
+        border-top: 1px solid #250c28;
+        margin: 0 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 100;
+        color: #fff; }
+        section.section-jobs-alt div.pk-card-slide .slide__back li:hover {
+          text-decoration: underline #912f9e; }
+    section.section-jobs-alt div.pk-card-slide .alt-btn.alt-btn--slide {
+      color: #000;
+      font-size: 1.6rem;
+      text-decoration: none;
+      text-transform: none;
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      bottom: 10px;
+      right: 15px;
+      padding: 10px;
+      background-image: linear-gradient(to right, #6e675f, #749398);
+      transition: all 0.5s ease-in; }
+    section.section-jobs-alt div.pk-card-slide:hover .slide__front {
+      top: -300px;
+      transform: rotate(-50deg); }
+
 section.section-jobs .pk-card {
   width: 250px;
   margin: 20px 0;
@@ -1670,106 +1782,6 @@ section.section-jobs .job-card__details {
     left: 0;
     text-shadow: 1px 2px 2px #000; }
 
-section.section-jobs-alt {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  height: 100vh; }
-  section.section-jobs-alt .grid-container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: space-evenly;
-    z-index: 1; }
-  section.section-jobs-alt .pk-card-slide:hover {
-    cursor: pointer; }
-  section.section-jobs-alt .pk-card-slide .slide__front,
-  section.section-jobs-alt .pk-card-slide .slide__back {
-    display: block;
-    width: 25rem;
-    height: 35rem;
-    top: 0;
-    position: absolute;
-    overflow: hidden;
-    text-align: center;
-    border: 1px solid #000; }
-  section.section-jobs-alt .pk-card-slide .slide__front {
-    z-index: 20001;
-    transition: all .5s ease;
-    background-color: #fff; }
-    section.section-jobs-alt .pk-card-slide .slide__front__picture {
-      height: 12rem;
-      background-size: cover;
-      background-repeat: no-repeat;
-      transition: all .5s ease-in-out; }
-      section.section-jobs-alt .pk-card-slide .slide__front__picture:first-child {
-        background-image: linear-gradient(to bottom, rgba(26, 186, 202, 0.5), rgba(51, 51, 51, 0.95)), url(/uiexperiments/img/motherboard.jpg); }
-      section.section-jobs-alt .pk-card-slide .slide__front__picture:nth-child(2) {
-        background-image: linear-gradient(to bottom, #f7f7f7, transparent), url(/uiexperiments/img/dark-keyboard.jpg); }
-    section.section-jobs-alt .pk-card-slide .slide__front__heading {
-      position: absolute;
-      bottom: -40px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #edebd7;
-      font-size: 2.8rem;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      text-shadow: 0 0 5px #000;
-      margin: auto;
-      letter-spacing: 5px; }
-    section.section-jobs-alt .pk-card-slide .slide__front__details {
-      background-color: #fff; }
-    section.section-jobs-alt .pk-card-slide .slide__front--description {
-      color: #000;
-      font-size: 1.2rem;
-      text-align: center;
-      margin: 22px;
-      user-select: none;
-      -webkit-user-select: none; }
-  section.section-jobs-alt .pk-card-slide .slide__back {
-    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-    background-color: #37123c;
-    z-index: 19999; }
-    section.section-jobs-alt .pk-card-slide .slide__back h3 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      color: #fff;
-      padding: 2rem;
-      margin-top: 5.5rem;
-      text-align: center; }
-    section.section-jobs-alt .pk-card-slide .slide__back .ui-slide {
-      margin: 0;
-      list-style-type: none; }
-    section.section-jobs-alt .pk-card-slide .slide__back li {
-      padding: 1rem 2rem;
-      text-align: center;
-      border-top: 1px solid #250c28;
-      margin: 0 20px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.4rem;
-      font-weight: 100;
-      color: #fff; }
-      section.section-jobs-alt .pk-card-slide .slide__back li:hover {
-        text-decoration: underline #912f9e; }
-  section.section-jobs-alt .pk-card-slide .alt-btn.alt-btn--slide {
-    color: #000;
-    font-size: 1.6rem;
-    text-decoration: none;
-    text-transform: none;
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    bottom: 10px;
-    right: 15px;
-    padding: 10px;
-    background-image: linear-gradient(to right, #6e675f, #749398);
-    transition: all 0.5s ease-in; }
-  section.section-jobs-alt .pk-card-slide:hover .slide__front {
-    top: -300px;
-    transform: rotate(-50deg); }
-
 section.section-skills {
   margin-top: 4rem; }
 
@@ -1819,13 +1831,13 @@ section .feature-skills {
 
 .section-resume {
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-  max-width: 70%;
   margin: 15rem auto 2rem;
   border: 0.5px solid #e9e9e9; }
   .section-resume div.container {
-    width: 95%; }
-  .section-resume div.row {
-    margin-bottom: 0; }
+    display: grid;
+    grid-template-columns: minmax(340px, 1fr) minmax(500px, 2fr);
+    grid-template-rows: 175px autofit;
+    grid-row-gap: 25px; }
   .section-resume hr {
     width: 100px;
     color: black;
@@ -1846,12 +1858,14 @@ section .feature-skills {
     margin-bottom: 1rem; }
 
 .resume__header {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   margin-top: -11px;
   margin-bottom: 20px; }
+  .resume__header--address, .resume__header--cell, .resume__header--email {
+    align-self: center; }
   .resume__header--intro {
     font-size: 10px;
     line-height: 1.4;
@@ -1861,7 +1875,7 @@ section .feature-skills {
 
 div.resume--skill {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-column-gap: 10px;
   justify-content: space-around;
   margin-left: 10px;
@@ -1876,7 +1890,15 @@ div.exp {
     margin-left: 10px;
     color: #337ab7; }
 
-.section-employees button.btn.btnResume {
+.section-employees .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr) minmax(320px, 2fr));
+  grid-template-rows: minmax(200px, 1fr) minmax(autofit, 5fr);
+  grid-row-gap: 70px;
+  justify-content: center;
+  justify-content: space-around; }
+
+button.btn.btnResume {
   visibility: visible;
   padding: 3px;
   background-color: #f9a523;
@@ -1889,9 +1911,9 @@ div.exp {
   right: 4px;
   color: white;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25); }
-  .section-employees button.btn.btnResume:hover {
+  button.btn.btnResume:hover {
     transform: translateY(-3px); }
-  .section-employees button.btn.btnResume:active, .section-employees button.btn.btnResume:focus {
+  button.btn.btnResume:active, button.btn.btnResume:focus {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     outline: none; }
@@ -1955,9 +1977,10 @@ div.exp {
 section.section-where .location-card {
   font-family: 'Varela Round', sans-serif;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 360px;
   justify-content: space-around;
-  grid-row-gap: 10px;
+  grid-gap: 20px;
   color: white;
   font-size: 1.6rem;
   font-weight: 700; }
@@ -1989,7 +2012,7 @@ section.section-where .loc {
     padding-right: 5px;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.5; }
+    line-height: 1.4; }
     section.section-where .loc span.meMinor ~ p {
       position: absolute;
       left: 47%;
