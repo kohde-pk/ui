@@ -155,12 +155,19 @@ section.section-jobs-alt {
     }
 }
 
-
 section.section-jobs {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 250px);
+        grid-gap: 20px;
+        justify-content: center;
+        align-content: center;
+
+    }
 
     .pk-card {
         width: 250px;
-        margin: 20px 0;
         perspective: 150rem;
         -moz-perspective: 150rem;
         -webkit-perspective: 150rem;

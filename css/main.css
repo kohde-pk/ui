@@ -562,14 +562,26 @@ nav.nav__banner {
     nav.nav__banner div.hamburger-menu.open__button span:nth-child(1) {
       top: 20px;
       transform: rotate(45deg);
-      background-color: white;
+      background-color: black;
       transition: all 0.5s ease; }
     nav.nav__banner div.hamburger-menu.open__button span:nth-child(2) {
-      display: none; }
+      display: none;
+      transition: all 0.5s ease 1s; }
     nav.nav__banner div.hamburger-menu.open__button span:nth-child(3) {
       top: 20px;
       transform: rotate(-45deg);
-      background-color: white; }
+      background-color: black; }
+    nav.nav__banner div.hamburger-menu.close__button span:nth-child(1) {
+      transform: rotate(0deg);
+      background-color: black;
+      transition: all 0.5s ease .25s; }
+    nav.nav__banner div.hamburger-menu.close__button span:nth-child(2) {
+      transition: all 0.5s ease 1s;
+      display: block; }
+    nav.nav__banner div.hamburger-menu.close__button span:nth-child(3) {
+      transform: rotate(deg);
+      background-color: black;
+      transition: all 0.5s ease .7s; }
   nav.nav__banner div.hamburger-menu > span {
     display: block;
     position: absolute;
@@ -590,13 +602,13 @@ nav.nav__banner {
     height: 5rem;
     width: 50%; }
     nav.nav__banner ul.nav__items li {
-      display: inline-block;
+      display: none;
       position: absolute;
       font-size: 1.4rem;
       list-style-type: none;
       text-decoration: none;
       align-items: left;
-      animation: seepIn 2s ease; }
+      animation: seepIn 2s ease 2s; }
       nav.nav__banner ul.nav__items li.link1 {
         bottom: 310px;
         right: 252px; }
@@ -653,18 +665,17 @@ nav div.menu__big-circle {
   position: fixed;
   width: 0;
   height: 0;
-  transform-origin: 100% 10%;
-  background-color: #000;
-  opacity: .5;
+  transform-origin: bottom right;
+  background-image: linear-gradient(to bottom left, #000, transparent);
   z-index: 10000;
   font-size: 1.6rem;
   top: 0px;
   right: 0px;
   transition: all 1s ease-in-out; }
   nav div.menu__big-circle.show__big-circle {
-    width: 350px;
-    height: 350px;
-    border-bottom-left-radius: 350px;
+    width: 250px;
+    height: 250px;
+    border-bottom-left-radius: 100px;
     z-index: 20000;
     box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.25); }
 
@@ -679,11 +690,22 @@ nav div.menu__big-circle {
     align-content: center;
     padding: 12px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25); }
+    nav ul.dropper--colors.hide_dropper-colors {
+      display: none; }
   nav.nav__banner div.dropper ul li.dropper--color {
     padding-bottom: 5px;
     margin: 0 auto; }
     nav.nav__banner div.dropper ul li.dropper--color:first-child {
       padding-left: 0; } }
+
+@media screen and (max-width: 368px) {
+  nav.nav__banner .nav__banner--header .nav__banner--name {
+    margin-top: 1.4rem;
+    margin-left: -6px;
+    font-size: 3rem; }
+  nav.nav__banner .nav__banner--header .nav__banner--title,
+  nav.nav__banner .nav__banner--header .nav__banner--company {
+    font-size: 1.4rem; } }
 
 nav.bg-custom {
   background-image: linear-gradient(to right, #1b61dd, #1abaca);
@@ -722,10 +744,9 @@ nav a.nav-link {
 @keyframes seepIn {
   0% {
     opacity: 0; }
-  80% {
-    opacity: 0.5; }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    display: inline-block; } }
 
 section {
   margin-top: 8rem;
@@ -1623,9 +1644,15 @@ section.section-jobs-alt {
       top: -300px;
       transform: rotate(-50deg); }
 
+section.section-jobs .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 20px;
+  justify-content: center;
+  align-content: center; }
+
 section.section-jobs .pk-card {
   width: 250px;
-  margin: 20px 0;
   perspective: 150rem;
   -moz-perspective: 150rem;
   -webkit-perspective: 150rem;
@@ -1791,7 +1818,7 @@ section .feature-skills {
   height: 220px;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #8aa1b1;
+  background-color: #b3cec2;
   border: 0.5px solid #044b7f;
   border-radius: 3px;
   box-shadow: 3px 3px 10px #636566; }
@@ -1826,7 +1853,7 @@ section .feature-skills {
     bottom: 10px; }
     section .feature-skills .skills--footer > p > i {
       font-weight: 600;
-      font-size: 1px;
+      font-size: 1rem;
       color: #107e7d; }
 
 .section-resume {

@@ -43,8 +43,13 @@ angular.module('app.core').controller('indexController', ['$scope', '$http', fun
 
         $('div.hamburger-menu').on('click', function(){
            $('div.hamburger-menu').toggleClass('open__button');
+           $('div.hamburger-menu').toggleClass('close__button');
            $('div.menu__big-circle').toggleClass('show__big-circle');
         });
+
+        $('div.dropper').on('click', function(){
+            $('ul.dropper--colors').toggleClass('hide_dropper-colors');
+         });
 
     
       });
