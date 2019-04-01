@@ -335,7 +335,8 @@ nav {
     //     z-index: 1000;
     // }
 
-    div.menu__big-circle {
+    div.menu__big-circle,
+    div.menu__slide-in-nav {
         position: fixed;
         width: 0;
         height: 0;
@@ -345,6 +346,7 @@ nav {
         font-size: 1.6rem;
         top: 40px;
         right: 0px;
+        overflow-x: hidden;
         transition: all 1s ease-in-out;
         
         &.show__big-circle {
@@ -401,12 +403,6 @@ nav {
         } 
     }
 
-
-    // &.bg-custom {
-    //     background-image: linear-gradient(to right, $pk-blue, $pk-light-blue);
-    //     margin-right: 0;
-    // }  
-
     &.navbar-custom {
         color: $color-white;
     }
@@ -419,8 +415,6 @@ nav {
 
     a.nav-links {
         color: $somber2;
-
-
 
         &:hover,
         &:active,

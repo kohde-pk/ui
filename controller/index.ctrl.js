@@ -1,11 +1,19 @@
 angular.module('app.core').controller('indexController', ['$scope', '$http', function($scope, $http) {
     
-    $scope.footerDetails = "SASS, HTML, AngularJS, JQuery, CSS Grid ";
+    $scope.footerDetails = "SASS, HTML, AngularJS, JQuery, JavaScript, CSS Grid ";
+
+    function openSlideNav() {
+        document.getElementById('side-nav').style.width = "170px";
+    }
+    function closeSlideNav() {
+        document.getElementById('side-nav').style.width = "0";
+    }
     
     jQuery(document).ready(function($){
         
         $('button.btn.btnResume').on('click', function() {
             var text = $('button.btn.btnResume').text();
+            alert(text);
             $('div.linked-in').toggleClass('show__info');
             $('button').text(
             text == "More Info" ? "Hide Info" : "More Info");
@@ -42,9 +50,9 @@ angular.module('app.core').controller('indexController', ['$scope', '$http', fun
         });
 
         $('div.hamburger-menu').on('click', function() {
-           $('div.hamburger-menu').toggleClass('open__button');
-           $('div.hamburger-menu').toggleClass('close__button');
-           $('div.menu__big-circle').toggleClass('show__big-circle');
+            $('div.hamburger-menu').toggleClass('open__button');
+            $('div.hamburger-menu').toggleClass('close__button');
+            $('div.menu__big-circle').toggleClass('show__big-circle');
         });
         
         $('a.nav-links').on('click', function() {

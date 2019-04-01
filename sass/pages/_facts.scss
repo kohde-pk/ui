@@ -1,7 +1,7 @@
 
 section.section-facts {
-    width: 100vw;
-    // height: 100vh;
+    min-height: 100%;
+
     .card-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, 260px);

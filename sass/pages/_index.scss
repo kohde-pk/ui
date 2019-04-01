@@ -1,10 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
     background-image: linear-gradient(to bottom right, $brite3, $brite2);
     margin: 0;
     padding: 0;
-    max-height: 100%;
     min-height: 100%;
-    max-width: 100%;
     min-width: 100%;
 
     &.color1 {
