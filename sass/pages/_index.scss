@@ -8,6 +8,7 @@ body {
     padding: 0;
     min-height: 100%;
     min-width: 100%;
+    
 
     &.color1 {
         background-image: linear-gradient(to bottom right, $daark1, $daark18);
@@ -92,6 +93,18 @@ body {
     
     .img-css {
         animation: float-css 3.1s ease-in-out infinite 0.3s;
+    }
+}
+.banner .icon-code {
+    position: absolute;
+    top: -25px;
+    // left: 19%;
+    margin-left: 40%;
+    z-index: -1;
+    opacity: .3;
+    
+    .img-css {
+        animation: float-css 3s ease-in-out infinite 0.3s;
     }
 }
 
