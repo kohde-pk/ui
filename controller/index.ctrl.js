@@ -1,13 +1,6 @@
 angular.module('app.core').controller('indexController', ['$scope', '$http', function($scope, $http) {
     
     $scope.footerDetails = "SASS, HTML, AngularJS, JQuery, JavaScript, CSS Grid ";
-
-    function openSlideNav() {
-        document.getElementById('side-nav').style.width = "170px";
-    }
-    function closeSlideNav() {
-        document.getElementById('side-nav').style.width = "0";
-    }
     
     jQuery(document).ready(function($){
         
