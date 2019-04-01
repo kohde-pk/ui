@@ -102,7 +102,7 @@ body {
     z-index: -1;
     opacity: .3;
     
-    .img-code {
+    >img.img-code {
         animation: float-css 3s ease-in-out infinite 0.3s;
     }
 }
