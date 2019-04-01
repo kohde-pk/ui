@@ -58,10 +58,10 @@ section.section-jobs-alt {
                 transition: all .5s ease-in-out;
                 
                 &:first-child {
-                    background-image: linear-gradient(to bottom, rgba($pk-light-blue, .5), rgba($color-grey-dark-3, .95)), url(/img/motherboard.jpg);
+                    background-image: linear-gradient(to bottom, rgba($pk-light-blue, .5), rgba($color-grey-dark-3, .95)), url(/ui/img/motherboard.jpg);
                 }
                 &:nth-child(2) {
-                    background-image: linear-gradient(to bottom, $color-grey-light-1, transparent), url(/img/dark-keyboard.jpg);
+                    background-image: linear-gradient(to bottom, $color-grey-light-1, transparent), url(/ui/img/dark-keyboard.jpg);
                 }
             }
             
@@ -231,17 +231,17 @@ section.section-jobs {
 
         &--1 {
             // background-image: linear-gradient(to right, $pk-orange-red, $kyle2), url(/img/fist-pump.jpg);
-            background-image: url(/img/code.jpg);
+            background-image: url(/ui/img/code.jpg);
         }
 
         &--2 {
             // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark), url(/img/code.jpg);
-            background-image: url(/img/trust.jpg);
+            background-image: url(/ui/img/trust.jpg);
         }
 
         &--3 {
             // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(/img/computer-desk.jpg);
-            background-image: url(/img/graphs.jpg);
+            background-image: url(/ui/img/graphs.jpg);
         }
 
     }
