@@ -2,7 +2,7 @@ angular.module('app.core').controller('newsController', ['$scope', '$http', func
     var vm = this;
     $scope.footerDetails = "Build using SASS, HTML, AngularJS"
     
-    $http.get('/uiexperiments/controller/json/news.json').success(function (data) {
+    $http.get('/controller/json/news.json').success(function (data) {
         $scope.articles = data;
     });
 }]);
