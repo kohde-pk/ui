@@ -110,13 +110,24 @@ body {
 .banner .icon-mouse {
     position: absolute;
     top: -25px;
-    // left: 52%;
     margin-left: 25%;
     z-index: -1;
     opacity: .3;
     
     .img-mouse {
         animation: float-mouse 2.7s ease-in-out infinite;
+        
+    }
+}
+.banner .icon-html5 {
+    position: absolute;
+    top: -25px;
+    margin-left: 10%;
+    z-index: -1;
+    opacity: .3;
+    
+    .img-html5 {
+        animation: float-mouse 2.5s ease-in-out infinite;
         
     }
 }
