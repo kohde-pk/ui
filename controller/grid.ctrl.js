@@ -1,7 +1,7 @@
 angular.module('app.core').controller('gridController', function() {
     var vm = this;
 
-    vm.footerDetails = "Build using SASS, HTML, AngularJS"
+    vm.footerDetails = "t using SASS, HTML, AngularJS"
     var max = 30;
     var min = 1;
 

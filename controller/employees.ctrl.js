@@ -1,7 +1,7 @@
 angular.module('app.core').controller('employeesController', ['$scope', '$http', function($scope, $http) {
     var vm = this;
 
-    $scope.footerDetails = "Build using SASS, HTML, AngularJS"
+    $scope.footerDetails = "Built using SASS, HTML, AngularJS"
 
     $scope.template = '/templates/resume.html';
     $scope.cat = "Resume";

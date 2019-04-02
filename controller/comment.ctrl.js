@@ -1,7 +1,7 @@
 angular.module('app.core').controller('commentController', function() {
     var vm = this;
 
-    vm.footerDetails = "Build using SASS, HTML, AngularJS"
+    vm.footerDetails = "Built using SASS, HTML, AngularJS"
 
     $.fn.commentCards = function(){
 
