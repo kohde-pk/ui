@@ -5,6 +5,7 @@ angular.module('app.core').controller('indexController', ['$scope', '$http', fun
     jQuery(document).ready(function($){
         
         $('button#Resume').on('click', function() {
+            console.log(this);
             var text = $('button.btn.btnResume').text();
             $('div.linked-in').toggleClass('show__info');
             $('button').text(
