@@ -104,7 +104,8 @@ section.section-facts {
     }
 }
 
-    .fact:hover {
+    .fact:hover,
+    .fact:active {
         .fact--head {
             // animation: headOut .5s ease-in;
             // display: none;

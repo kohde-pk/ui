@@ -1127,17 +1127,20 @@ section.section-facts {
     box-shadow: inset -6px -7px 19px #be7101;
     box-shadow: inset 6px 7px 19px #fea627; }
 
-.fact:hover .fact--head {
+.fact:hover .fact--head,
+.fact:active .fact--head {
   left: .25rem;
   transform: scale(0.85);
   font-size: 2rem;
   padding-top: 10px; }
 
-.fact:hover .fact--answer {
+.fact:hover .fact--answer,
+.fact:active .fact--answer {
   display: block;
   animation: answerIn .5s ease-out; }
 
-.fact:hover i.fact--icon {
+.fact:hover i.fact--icon,
+.fact:active i.fact--icon {
   display: none; }
 
 @keyframes answerIn {
