@@ -27,7 +27,7 @@
   "dependencies": {
     "@uirouter/angularjs": "^1.0.22",
     "express": "^4.16.4",
-    "hacker-news-api": "^2.0.0",
+    "hoek": "^6.1.3",
     "popper.js": "^1.14.7"
   }
 }

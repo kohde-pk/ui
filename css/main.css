@@ -422,7 +422,7 @@ svg {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8), url(/uiexperiments/img/hero.jpg));
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8), url(/ui/img/hero.jpg));
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1440,6 +1440,15 @@ body {
   .banner .icon-css .img-css {
     animation: float-css 3.1s ease-in-out infinite 0.3s; }
 
+.banner .icon-code {
+  position: absolute;
+  top: -25px;
+  margin-left: 40%;
+  z-index: -1;
+  opacity: .3; }
+  .banner .icon-code > img.img-code {
+    animation: float-css 3s ease-in-out infinite 0.3s; }
+
 .banner .icon-mouse {
   position: absolute;
   top: -25px;
@@ -1583,9 +1592,9 @@ section.section-jobs-alt {
         background-repeat: no-repeat;
         transition: all .5s ease-in-out; }
         section.section-jobs-alt div.pk-card-slide .slide__front__picture:first-child {
-          background-image: linear-gradient(to bottom, rgba(26, 186, 202, 0.5), rgba(51, 51, 51, 0.95)), url(/uiexperiments/img/motherboard.jpg); }
+          background-image: linear-gradient(to bottom, rgba(26, 186, 202, 0.5), rgba(51, 51, 51, 0.95)), url(/ui/img/motherboard.jpg); }
         section.section-jobs-alt div.pk-card-slide .slide__front__picture:nth-child(2) {
-          background-image: linear-gradient(to bottom, #f7f7f7, transparent), url(/uiexperiments/img/dark-keyboard.jpg); }
+          background-image: linear-gradient(to bottom, #f7f7f7, transparent), url(/ui/img/dark-keyboard.jpg); }
       section.section-jobs-alt div.pk-card-slide .slide__front__heading {
         position: absolute;
         bottom: -40px;
@@ -1701,11 +1710,11 @@ section.section-jobs .pk-card {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
     section.section-jobs .pk-card__picture--1 {
-      background-image: url(/uiexperiments/img/code.jpg); }
+      background-image: url(/ui/img/code.jpg); }
     section.section-jobs .pk-card__picture--2 {
-      background-image: url(/uiexperiments/img/trust.jpg); }
+      background-image: url(/ui/img/trust.jpg); }
     section.section-jobs .pk-card__picture--3 {
-      background-image: url(/uiexperiments/img/graphs.jpg); }
+      background-image: url(/ui/img/graphs.jpg); }
   section.section-jobs .pk-card__heading {
     font-size: 2rem;
     font-weight: 400;
