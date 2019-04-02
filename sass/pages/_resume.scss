@@ -162,35 +162,37 @@ button.btn.btnResume {
 .section-employees .dots.bottom li:first-child {
     margin-bottom: 3px;
 }
-.linked-in {
+div.linked-in {
     @include businessLinkedIn;
     background-color: $color-white;
-    box-shadow: 3px 3px 10px $pk-gray;
     padding: 1rem 0 0 1rem;
     margin-top: 1rem;
     position: relative;
     border-radius: 50px;
     display: none;
     @include shadow6;
+    background-image: linear-gradient(to right, $pk-light-blue, $pk-blue);
 
-    &.show__info {
+    &.show__info,
+    &:active {
         display: block;
     }
     & i.fa-linkedin {
-        color: transparent;
-        background-image: linear-gradient(to right, $pk-light-blue, $pk-blue);
+        color: white;
         -webkit-background-clip: text;
         background-clip: text;
         margin-top: -10px;
         margin-left: 18px;
 
         &~p.linkedin-link {
-            margin: -35px 0 0 70px;
-            font-size: 1.4rem;
+            @include f-shadows;
+            margin: -40px 0 0 70px;
+            font-size: 2rem;
             color: $color-black;
             
             &>a {
-                color: $color-black;
+                color: $color-white;
+                text-decoration: underline wavy white;
             }
         }
     }

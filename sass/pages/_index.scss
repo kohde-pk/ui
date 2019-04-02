@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    background-color: brite3;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
     
 
     &.color1 {
-        background-image: linear-gradient(to bottom right, $daark1, $daark18);
+        background-image: linear-gradient(to bottom right, $daark18, $daark1 );
     }
     &.color2 {
         background-image: linear-gradient(to bottom right, $color-black, lighten($color-black, 30));

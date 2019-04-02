@@ -639,24 +639,25 @@ nav.nav__banner {
 nav div.menu__big-circle,
 nav div.menu__slide-in-nav {
   position: fixed;
-  width: 0;
-  height: 0;
-  transform-origin: bottom right;
+  width: 200px;
+  height: 270px;
   background-color: #fff;
-  z-index: 10000;
   font-size: 1.6rem;
   top: 40px;
   right: 0px;
-  overflow-x: hidden;
-  transition: all 1s ease-in-out; }
+  box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0s, opacity 300ms;
+  -webkit-transition: visibility 1s linear 0s, opacity 300ms; }
   nav div.menu__big-circle.show__big-circle,
   nav div.menu__slide-in-nav.show__big-circle {
-    width: 200px;
-    height: 270px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    z-index: 20000;
-    box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.25); }
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 300ms;
+    -webkit-transition: visibility 1s linear 0s, opacity 300ms; }
 
 @media screen and (max-width: 768px) {
   nav.nav__banner div.dropper {
@@ -947,7 +948,7 @@ section .section-comment .container {
   padding: 0;
   width: 35rem;
   height: 35rem;
-  margin: 10% auto 0;
+  margin: 12% auto 0;
   transition: all 2s ease-in-out; }
 
 .card {
@@ -1373,7 +1374,8 @@ section.section-grid {
     width: 0; } }
 
 html {
-  height: 100%; }
+  height: 100%;
+  background-color: brite3; }
 
 body {
   background-image: linear-gradient(to bottom right, #2e4057, #048ba8);
@@ -1382,7 +1384,7 @@ body {
   min-height: 100%;
   min-width: 100%; }
   body.color1 {
-    background-image: linear-gradient(to bottom right, #05668d, #023144); }
+    background-image: linear-gradient(to bottom right, #023144, #05668d); }
   body.color2 {
     background-image: linear-gradient(to bottom right, #000, #4d4d4d); }
   body.color3 {
@@ -1566,7 +1568,7 @@ body {
 section.section-jobs-alt {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  height: 100%; }
+  min-height: 100%; }
   section.section-jobs-alt div.grid-container {
     position: relative;
     display: grid;
@@ -2008,32 +2010,33 @@ button.btn.btnResume {
 .section-employees .dots.bottom li:first-child {
   margin-bottom: 3px; }
 
-.linked-in {
+div.linked-in {
   width: 27rem;
   height: 4rem;
   background-color: #fff;
-  box-shadow: 3px 3px 10px #636566;
   padding: 1rem 0 0 1rem;
   margin-top: 1rem;
   position: relative;
   border-radius: 50px;
   display: none;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); }
-  .linked-in.show__info {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to right, #1abaca, #1b61dd); }
+  div.linked-in.show__info, div.linked-in:active {
     display: block; }
-  .linked-in i.fa-linkedin {
-    color: transparent;
-    background-image: linear-gradient(to right, #1abaca, #1b61dd);
+  div.linked-in i.fa-linkedin {
+    color: white;
     -webkit-background-clip: text;
     background-clip: text;
     margin-top: -10px;
     margin-left: 18px; }
-    .linked-in i.fa-linkedin ~ p.linkedin-link {
-      margin: -35px 0 0 70px;
-      font-size: 1.4rem;
+    div.linked-in i.fa-linkedin ~ p.linkedin-link {
+      font-family: 'Shadows Into Light', cursive;
+      margin: -40px 0 0 70px;
+      font-size: 2rem;
       color: #000; }
-      .linked-in i.fa-linkedin ~ p.linkedin-link > a {
-        color: #000; }
+      div.linked-in i.fa-linkedin ~ p.linkedin-link > a {
+        color: #fff;
+        text-decoration: underline wavy white; }
 
 section.section-where .location-card {
   font-family: 'Varela Round', sans-serif;
