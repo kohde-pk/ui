@@ -1465,7 +1465,7 @@ body {
   z-index: -1;
   opacity: .3; }
   .banner .icon-html5 .img-html5 {
-    animation: float-mouse 2.5s ease-in-out infinite; }
+    animation: float-mouse 4.5s ease-in-out infinite; }
 
 .banner .icon-git {
   position: absolute;
