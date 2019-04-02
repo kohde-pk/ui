@@ -4,7 +4,7 @@ angular.module('app.core').controller('indexController', ['$scope', '$http', fun
     
     jQuery(document).ready(function($){
         
-        $('button.btn.btnResume').on('click', function() {
+        $('button#Resume').on('click', function() {
             var text = $('button.btn.btnResume').text();
             $('div.linked-in').toggleClass('show__info');
             $('button').text(
