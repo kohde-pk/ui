@@ -18,7 +18,8 @@ section.section-grid {
     margin: 15px 0;
     grid-auto-flow: dense;
 }
-.grid-item {
+.grid-item,
+div:not(.grid-item13) {
     // center content of items
     color: $color-black;
     // border: 1px solid $pk-gray;
@@ -34,14 +35,17 @@ section.section-grid {
     &:hover {
         box-shadow : 6px 6px 6px rgba($color-black, 0.5);
         border: 1px solid $web3;
-        // transform: rotateY(45deg) translateX(0px) translateY(0px);
-        // animation: slideBack 1s;
         transform: scale(1.1);
         transform: translateX(-40px) translateY(-20%) rotateZ(-45deg);
         -webkit-transform: translateX(-40px) translateY(-20%) rotateZ(-45deg);
 
         transition-duration: .5s;
         -webkit-transition-duration: .5s;
+
+        &.grid-item13:hover {
+            transform: scale(1.5);
+            transition: all .5ms;
+        }
     }
 }
 .grid-item1,
@@ -94,6 +98,11 @@ section.section-grid {
     .grid-item.front:nth-child(9n) {
         background: $web5;
         color: $color-white;
+    }
+    .grid-item.front.grid-item13 {
+        width: 10rem;
+        height: 10rem;
+        overflow: hidden;
     }
 }
 
