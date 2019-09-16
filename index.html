@@ -18,15 +18,15 @@
     <body id="bod" ng-app="app" ng-controller="indexController">
 
         <div class="banner">
-            <div class="icon-apple"><img src="/ui/img/apple.png" alt="Apple Logo" class="img-apple"></div>
-            <div class="icon-bluetooth"><img src="/ui/img/bluetooth.png" alt="Bluetooth" class="img-bluetooth"></div>
-            <div class="icon-css"><img src="/ui/img/css3.png" alt="CSS Logo" class="img-css"></div>
-            <div class="icon-git"><img src="/ui/img/github.png" alt="Github Logo" class="img-git"></div>
-            <div class="icon-code"><img src="/ui/img/code.png" alt="code icon" class="img-code"></div>
-            <div class="icon-html5"><img src="/ui/img/html5.png" alt="html5 icon" class="img-html5"></div>
-            <div class="icon-js"><img src="/ui/img/js.png" alt="JavaScript Logo" class="img-js"></div>
-            <div class="icon-tv"><img src="/ui/img/monitor-sm.png" alt="PC Monitor" class="img-tv"></div>
-            <div class="icon-mouse"><img src="/ui/img/mouse-pointer.png" alt="PC Mouse" class="img-mouse"></div>
+            <div class="icon-apple"><img src="../img/apple.png" alt="Apple Logo" class="img-apple"></div>
+            <div class="icon-bluetooth"><img src="../img/bluetooth.png" alt="Bluetooth" class="img-bluetooth"></div>
+            <div class="icon-css"><img src="../img/css3.png" alt="CSS Logo" class="img-css"></div>
+            <div class="icon-git"><img src="../img/github.png" alt="Github Logo" class="img-git"></div>
+            <div class="icon-code"><img src="../img/code.png" alt="code icon" class="img-code"></div>
+            <div class="icon-html5"><img src="../img/html5.png" alt="html5 icon" class="img-html5"></div>
+            <div class="icon-js"><img src="../img/js.png" alt="JavaScript Logo" class="img-js"></div>
+            <div class="icon-tv"><img src="../img/monitor-sm.png" alt="PC Monitor" class="img-tv"></div>
+            <div class="icon-mouse"><img src="../img/mouse-pointer.png" alt="PC Mouse" class="img-mouse"></div>
 
             <nav class="nav__banner">
                 <div>
@@ -46,6 +46,13 @@
                     <h3 class="nav__banner--title">Front-end/UI Developer</h3>
                     <h3 class="nav__banner--company">Omaha, NE</h3>
                 </div>
+                <details class="dropdown" js-menu-container>
+                    <summary class="btn" js-menu-target aria-haspopup="menu">
+                        <ul class="dropdown-content" js-menu-content>
+                            <li><a href="/aboutus"></a></li>
+                        </ul>
+                    </summary>
+                </details>
                 <div>
                     <div class="hamburger-menu close__button">
                         <span class=""></span>
@@ -87,6 +94,9 @@
                                 <li class="nav__item link9">
                                     <a class="nav-links" href="#/slide">Slide Card</a>
                                 </li>
+                                <li class="nav__item link10">
+                                    <a class="nav-links" href="#/details">Details</a>
+                                </li>
                             </ul> 
                         </div>
                     </div>
@@ -124,6 +134,7 @@
 
         <script src="controller/aboutUs.ctrl.js"></script>
         <script src="controller/comment.ctrl.js"></script>
+        <script src="controller/details.ctrl.js"></script>
         <script src="controller/employees.ctrl.js"></script>
         <script src="controller/facts.ctrl.js"></script>
         <script src="controller/footer.ctrl.js"></script>

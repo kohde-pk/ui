@@ -66,6 +66,10 @@ angular
                 templateUrl: 'templates/grid.html',
                 controller: 'gridController'
             })
+            .when('/details', {
+                templateUrl: 'templates/details.html',
+                controller: 'detailsController'
+            })
             .otherwise({
                 redirectTo: '/whereWe'
             });
